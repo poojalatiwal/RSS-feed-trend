@@ -1,0 +1,1930 @@
+{
+  "timestamp": "2026-03-24T15:16:52.345340",
+  "trends": [
+    {
+      "trend_id": 1,
+      "briefing_type": "Trending Narrative",
+      "briefing": "No content to synthesize.",
+      "sources": [
+        {
+          "title": "U.S. and Iran Send Conflicting Signals on Peace Prospects",
+          "link": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump",
+          "summary": "President Trump said talks were underway. A top Iranian official denied that, while other Iranians said messages were being traded through intermediaries.",
+          "published": "2026-03-24T01:34:18+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 3,
+            "credibility_score": 100
+          },
+          "cluster": 1,
+          "x": 0.26291198592405907,
+          "y": -0.1534903193713353,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "Trump Delays Threat to Iran, but War Negotiations Are in Early Stage",
+          "link": "https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html",
+          "summary": "President Trump postponed his threat to strike power plants in Iran, citing \u201cproductive conversations\u201d with the Iranians. But officials said the talks were in an early stage and not substantive.",
+          "published": "2026-03-23T18:44:14+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 4,
+            "credibility_score": 100
+          },
+          "cluster": 1,
+          "x": 0.23841244696672423,
+          "y": -0.18489271678461427,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "Here\u2019s What Happened in the War in the Middle East on Monday",
+          "link": "https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html",
+          "summary": "Conflicting signals about whether any negotiations to end the fighting were in progress created confusion.",
+          "published": "2026-03-23T17:07:30+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 5,
+            "credibility_score": 100
+          },
+          "cluster": 1,
+          "x": 0.17361510563909524,
+          "y": -0.07169203053263712,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "Trump Says U.S. Is Negotiating With Iran, Which Publicly Denies His Claim",
+          "link": "https://www.nytimes.com/2026/03/23/world/middleeast/iran-war-trump.html",
+          "summary": "\u201cVery, very strong talks,\u201d President Trump claimed. Fake news, replied an Iranian parliamentary leader.",
+          "published": "2026-03-23T18:18:51+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/23/world/middleeast/iran-war-trump.html",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 4,
+            "credibility_score": 100
+          },
+          "cluster": 1,
+          "x": 0.24135892831850264,
+          "y": -0.16909288821200577,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "\u2018Strong Talks\u2019 With Iran?",
+          "link": "https://www.nytimes.com/2026/03/23/world/us-iran-talks-denmark-election.html",
+          "summary": "President Trump\u2019s latest statements about discussions with Iran don\u2019t necessarily signal an end in sight to the war, but they do buy him some time.",
+          "published": "2026-03-24T01:05:21+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/23/world/us-iran-talks-denmark-election.html",
+          "verification_status": "uncertain",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 0,
+            "credibility_score": 50
+          },
+          "cluster": 1,
+          "x": 0.24296839308022147,
+          "y": -0.20588754253780264,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "Trump Delays Energy Strikes, but Iran\u2019s Infrastructure Is Already Battered",
+          "link": "https://www.nytimes.com/2026/03/23/world/middleeast/trump-iran-battered-infrastructure.html",
+          "summary": "U.S. and Israeli attacks on power plants and other civilian infrastructure risk escalating the conflict across the region, and angering Iranians who oppose the government.",
+          "published": "2026-03-23T14:55:19+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/23/world/middleeast/trump-iran-battered-infrastructure.html",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 1,
+            "credibility_score": 70
+          },
+          "cluster": 1,
+          "x": 0.23072299882963118,
+          "y": -0.16332895397256045,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "Here\u2019s What Happened in the War in the Middle East on Saturday",
+          "link": "https://www.nytimes.com/2026/03/21/world/middleeast/middle-east-war-recap.html",
+          "summary": "An Iranian missile wounded dozens in Dimona, a city near Israel\u2019s main nuclear research facility, as Tehran showed no signs of backing down.",
+          "published": "2026-03-23T09:51:39+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/21/world/middleeast/middle-east-war-recap.html",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 3,
+            "credibility_score": 100
+          },
+          "cluster": 1,
+          "x": 0.20543315443816318,
+          "y": -0.0785108895997911,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "Ultimatums, diplomacy and a trip to Graceland as Trump eyes a deal with Iran",
+          "link": "https://www.bbc.com/news/articles/c895v5pq5p1o?at_medium=RSS&at_campaign=rss",
+          "summary": "America may be a nation at war, but the president's activities have been a mix of diplomacy and diversions - with the occasional swing toward the surreal.",
+          "published": "2026-03-23T21:11:31+00:00",
+          "source": "BBC News",
+          "id": "https://www.bbc.com/news/articles/c895v5pq5p1o#0",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "bbc.com",
+            "similar_articles": 1,
+            "credibility_score": 70
+          },
+          "cluster": 1,
+          "x": 0.2189855452846087,
+          "y": -0.16010001449343603,
+          "ui_trend_num": 1
+        },
+        {
+          "title": "US' and Iran's options for ending war narrow the longer it goes on",
+          "link": "https://www.bbc.com/news/articles/cn53zvlglg7o?at_medium=RSS&at_campaign=rss",
+          "summary": "Iran shows no sign of climbdown, while air power alone cannot achieve the US' main goal.",
+          "published": "2026-03-23T10:04:38+00:00",
+          "source": "BBC News",
+          "id": "https://www.bbc.com/news/articles/cn53zvlglg7o#2",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "bbc.com",
+            "similar_articles": 4,
+            "credibility_score": 100
+          },
+          "cluster": 1,
+          "x": 0.24276443414513582,
+          "y": -0.16959301718942194,
+          "ui_trend_num": 1
+        }
+      ],
+      "trend_size": 9
+    },
+    {
+      "trend_id": 2,
+      "briefing_type": "Emerging Topic",
+      "briefing": "# Deadly Runway Collision Kills Two Pilots, Injures Dozens at LaGuardia Airport\n\n## Overview\n\nTwo pilots were killed and dozens of passengers and crew were injured when an Air Canada passenger plane collided with a fire truck on a runway at New York\u2019s LaGuardia Airport late Sunday night. The incident, involving Air Canada flight AC8646, occurred at 23:40 local time (03:40 GMT Monday) just after the plane landed from Montreal. Eyewitnesses described a chaotic scene, with one passenger stating it \"was like the plane got cut in half.\" The crash caused significant travel disruption, with hundreds of flights delayed or cancelled, and prompted a full investigation by the National Transportation Safety Board (NTSB).\n\n## Key Developments\n\n*   **Collision Details:** Air Canada flight AC8646, a CRJ-900 jet operated by Jazz Aviation under the Air Canada Express brand, collided with a fire truck on a LaGuardia Airport runway upon landing.\n*   **Fatalities:** Both pilots of the aircraft were killed in the collision. They have been identified as Antoine Forest, 30, and Mackenzie Gunther.\n*   **Injuries:** While sources differ on the total number, it is confirmed that dozens were injured. Some reports state 41 people were taken to hospital, some with serious injuries, while another report mentioned 9 hospitalizations. Two people in the fire engine were also hospitalized.\n*   **Flight Attendant's Survival:** Solange Tremblay, a flight attendant on the plane, survived after being ejected more than 100 meters from the aircraft while still strapped to her seat. She sustained multiple bone fractures, including a broken leg, and underwent surgery, with her family calling her survival a \"complete miracle.\" She was later found strapped into her seat.\n*   **Airport Operations:** LaGuardia Airport was shut down until Monday afternoon, leading to hundreds of flight delays and cancellations. The specific runway involved remains closed for the ongoing investigation due to \"a tremendous amount of debris.\"\n*   **Air Traffic Control (ATC) Audio:** Recordings captured an air traffic controller urgently saying, \"'Truck One, stop, stop, stop!\" seconds before the crash. Subsequent audio suggests an ATC controller acknowledged a mistake, stating, \"I messed up,\" while a colleague offered support.\n*   **Fire Truck's Purpose:** The fire truck had been dispatched minutes earlier to another plane that reported an \"odour issue.\"\n*   **Investigation Launched:** The NTSB has commenced a thorough investigation into the incident. An NTSB team arrived at the site early Monday, conducting a walking inspection and analyzing the undamaged cockpit voice recorder and flight data recorder.\n\n## Perspectives & Differences\n\n*   **Injury Count Discrepancy:** While the BBC reported that 41 people were taken to hospital, another report from The Guardian stated that nine people were sent to the hospital. All sources agree that dozens were injured and required medical attention.\n*   **Pilot Identification:** Initially, one pilot, Antoine Forest, was named across sources. The Guardian later confirmed the identity of the second pilot as Mackenzie Gunther, providing a more complete picture of the fatalities.\n*   **ATC Accountability:** Source 3 (The Guardian) uniquely highlighted a piece of air traffic control audio where a controller seemingly admits, \"I messed up,\" providing a potential insight into human error, which was not explicitly detailed in other reports beyond the initial \"stop, stop, stop\" command.\n*   **Focus and Tone:** The BBC emphasized eyewitness accounts and the broader impact on airport operations and national sentiment. The Guardian specifically focused on the \"miracle\" survival of the flight attendant, dedicating significant coverage to her story and family's comments. All sources maintained a factual, neutral tone regarding the core incident details.\n*   **Consensus:** All three sources are consistent on the core facts: a collision between an Air Canada passenger plane and a fire truck at LaGuardia Airport on Sunday night, resulting in the deaths of two pilots and injuries to passengers and crew.\n\n## Context & Background\n\nThe fatal collision marks the first incident with a death at LaGuardia Airport in over 34 years, according to officials. The event occurs during a challenging period for US air travel, exacerbated by ongoing Transportation Security Administration (TSA) staffing shortages. Due to a government shutdown, TSA agents have been working without pay for over a month, leading to increased sick calls and extended security checkpoint waits. NTSB Chairwoman Jennifer Homendy noted that even her investigative team faced significant TSA-related delays in reaching the crash site.\n\n## Implications\n\n*   **Short-term:** The crash immediately disrupted travel at one of the busiest airports in the US, leading to widespread delays and cancellations. It has also prompted urgent calls for a comprehensive review of runway safety protocols and air traffic control procedures at congested airports. The injured passengers and crew face ongoing medical treatment and recovery.\n*   **Long-term:** The NTSB investigation will likely lead to recommendations aimed at preventing similar incidents, potentially influencing changes in aviation safety regulations, airport ground operations, and communication protocols between aircraft and ground vehicles. The incident may also intensify scrutiny on the impact of government shutdowns and staffing shortages on critical safety agencies like TSA and FAA.\n*   **Human Impact:** The tragedy deeply affects the families of the deceased pilots and the surviving passengers and crew, some of whom sustained serious injuries and experienced profound trauma. It also raises concerns among the flying public about air travel safety.\n\n## Notable Quotes\n\n*   \"It was like the plane got cut in half.\" \u2013 Leo Medina, passenger on another plane near the incident (Source 1)\n*   \"As you heard the brake, a couple seconds later it was just a very loud boom... Everybody jolted out of their seats.\" \u2013 Rebecca Liquori, passenger on the crashed plane (Source 1)\n*   \"It's a complete miracle. At the moment of impact, her seat was ejected more than 100 metres from the plane. They found her and she was still strapped into her seat.\" \u2013 Sarah L\u00e9pine, daughter of surviving flight attendant Solange Tremblay (Source 3)\n*   \"These were two young men at the start of their career, so it's an absolute tragedy.\" \u2013 Bran Bedford, Federal Aviation Administration (FAA) administrator (Source 1)\n\n## Gaps & Uncertainties\n\n*   The precise sequence of events leading to the collision, including the exact movements of the fire truck and the landing aircraft, is still under investigation.\n*   The full findings from the cockpit voice recorder and flight data recorder analysis are pending.\n*   The specific nature and severity of injuries for all hospitalized individuals have not been fully disclosed.\n*   Further details about the \"odour issue\" reported by the other plane, which prompted the fire truck's deployment, remain unclear.\n*   The NTSB's final conclusions regarding any potential human error, communication failures, or systemic issues contributing to the crash are yet to be determined.",
+      "sources": [
+        {
+          "title": "'Like the plane got cut in half': LaGuardia crash that killed two pilots now under investigation",
+          "link": "https://www.bbc.com/news/articles/c78rdze8zvjo?at_medium=RSS&at_campaign=rss",
+          "summary": "In the aftermath of the collision of Air Canada flight AC8646 with a fire truck in New York, US transportation chief Sean Duffy emphasized that seat belts helped save lives",
+          "published": "2026-03-23T15:43:47+00:00",
+          "source": "BBC News",
+          "id": "https://www.bbc.com/news/articles/c78rdze8zvjo#0",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "bbc.com",
+            "similar_articles": 1,
+            "credibility_score": 70
+          },
+          "cluster": 8,
+          "x": 0.031041366678766065,
+          "y": 0.3661920196428547,
+          "ui_trend_num": 2
+        },
+        {
+          "title": "How the deadly LaGuardia Airport crash unfolded",
+          "link": "https://www.bbc.com/news/videos/czxrv4pqx72o?at_medium=RSS&at_campaign=rss",
+          "summary": "Video shows the aftermath of the collision between a passenger plane and a firefighting vehicle on the runway of the New York airport.",
+          "published": "2026-03-23T16:47:26+00:00",
+          "source": "BBC News",
+          "id": "https://www.bbc.com/news/videos/czxrv4pqx72o#3",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "bbc.com",
+            "similar_articles": 3,
+            "credibility_score": 100
+          },
+          "cluster": 8,
+          "x": 0.03134408316312294,
+          "y": 0.32251429786811386,
+          "ui_trend_num": 2
+        },
+        {
+          "title": "\u2018A miracle\u2019: Canadian flight attendant ejected from plane survives New York crash",
+          "link": "https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia",
+          "summary": "<p>Solange Tremblay was ejected over 100 metres from the plane after collision at LaGuardia airport, her daughter says</p><ul><li><p><a href=\"https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights\">Two pilots killed after Air Canada jet collision at LaGuardia in New York</a></p></li><li><p><a href=\"https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-us-email-to-get-newsletter-alerts-direct-to-your-inbox?utm_medium=ACQUISITIONS_STANDFIRST&amp;utm_campaign=BN22326&amp;utm_content=signup&amp;utm_term=standfirst&amp;utm_source=GUARDIAN_WEB\">Sign up for the Breaking News US newsletter email</a></p></li></ul><p>A flight attendant on the Air <a href=\"https://www.theguardian.com/world/canada\">Canada</a> Jazz flight that <a href=\"https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights\">collided</a> with a fire truck at <a href=\"https://www.theguardian.com/us-news/new-york\">New York</a>\u2019s LaGuardia airport on Sunday survived in what her daughter called a \u201ccomplete miracle\u201d, when she was ejected more than 100 metres from the plane while still strapped to her seat.</p><p>The CRJ-900 jet, operated by Jazz Aviation, collided with a fire truck as it landed, killing both the pilot and co-pilot. Nine people were sent to the hospital with injuries, including Solange Tremblay, a flight attendant.</p> <a href=\"https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia\">Continue reading...</a>",
+          "published": "2026-03-23T19:39:29+00:00",
+          "source": "World news | The Guardian",
+          "id": "https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia",
+          "verification_status": "uncertain",
+          "verification_detail": {
+            "domain": "theguardian.com",
+            "similar_articles": 0,
+            "credibility_score": 50
+          },
+          "cluster": 8,
+          "x": 0.024390740886374718,
+          "y": 0.3526741999904643,
+          "ui_trend_num": 2
+        },
+        {
+          "title": "Two pilots killed after Air Canada jet collision at LaGuardia in New York",
+          "link": "https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights",
+          "summary": "<p>NTSB says investigation under way as nine people remain hospitalized after plane hit fire tuck on runway</p><ul><li><p><a href=\"https://www.theguardian.com/us-news/live/2026/mar/23/new-york-laguardia-airport-plane-vehicle-crash-air-canada-updates\">US politics live \u2013 latest updates</a></p></li></ul><p>The pilot and co-pilot of an Air Canada Express regional jet have been killed after it collided with a fire truck while landing at <a href=\"https://www.theguardian.com/us-news/new-york\">New York</a>\u2019s LaGuardia airport, in an incident that closed the airport for several hours.</p><p>The Air Canada Express CRJ-900 plane, operated by Jazz Aviation, was carrying 72 passengers and four crew members from Montreal. Nine people remain hospitalized after the collision, which happened around 11.45pm ET on Sunday as the firefighting vehicle was responding to a separate incident.</p> <a href=\"https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights\">Continue reading...</a>",
+          "published": "2026-03-23T18:02:32+00:00",
+          "source": "World news | The Guardian",
+          "id": "https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "theguardian.com",
+            "similar_articles": 2,
+            "credibility_score": 85
+          },
+          "cluster": 8,
+          "x": 0.04289287065642907,
+          "y": 0.3326818566855491,
+          "ui_trend_num": 2
+        }
+      ],
+      "trend_size": 4
+    },
+    {
+      "trend_id": 3,
+      "briefing_type": "Emerging Topic",
+      "briefing": "# ICE Expands Enforcement Footprint in Local Policing and U.S. Airports Amid Shutdown\n\n## Overview\n\nThe U.S. Immigration and Customs Enforcement (ICE) has significantly expanded its operational scope, increasing its presence in local law enforcement agencies through a financial incentive program and deploying agents to major U.S. airports. The airport deployment, initiated during a partial government shutdown, aims to alleviate severe security line delays caused by unpaid Transportation Security Administration (TSA) staff absences. Concurrently, ICE is offering substantial financial packages, including officer salaries and equipment funds, to local police departments nationwide that agree to assist in federal immigration enforcement. Both initiatives have drawn scrutiny regarding federal overreach, transparency, and the appropriate role of immigration agents.\n\n## Key Developments\n\n*   **287(g) Program Expansion:** ICE is actively recruiting local law enforcement agencies into its \"Task Force Model\" under the 287(g) program, which deputizes local officers to assist in federal immigration enforcement. As of March 17, 900 agencies, including 431 town, village, and city police departments, have signed up.\n*   **Financial Incentives for Local Police:** The Department of Homeland Security (DHS) is covering costs for participating local departments, exemplified by a $122,515 wire transfer to Carroll, New Hampshire, population 820, for its four full-time officers. Incentives include annual salaries for officers, up to a quarter of salaries in overtime, up to $7,500 for equipment per trained officer, $100,000 for a new vehicle per department, and quarterly financial awards ($500-$1,000) based on officers' \"successful location of aliens provided by ICE.\"\n*   **Controversial Private Agreements:** Records reveal that some local departments, like Carroll, have signed a non-public \"service agreement\" with ICE alongside a public Memorandum of Agreement. The private agreement includes stronger pledges for DOJ legal defense in lawsuits related to immigration enforcement and grants ICE control over information obtained through the agreement, potentially limiting public access via state records laws.\n*   **Airport Deployments Amid Shutdown:** ICE agents have been deployed to 14 major U.S. airports, including Atlanta's Hartsfield-Jackson, Chicago's O'Hare, Newark Liberty, and San Francisco International. This deployment is a direct response to a partial government shutdown that has led to thousands of unpaid TSA agents calling out of work, causing hours-long security queues.\n*   **Eyewitness Accounts of Detentions:** At San Francisco International Airport, eyewitnesses filmed what appeared to be plainclothes officers forcibly detaining a woman, sparking public alarm. San Francisco Police Department (SFPD) officers present stated they did not assist in federal immigration enforcement and remained to maintain public safety when they realized the situation involved immigration enforcement.\n*   **Presidential Directive on Masks:** President Donald Trump requested that ICE agents at airports not wear masks, contrasting with the agency's previous use of masks in other enforcement actions.\n\n## Perspectives & Differences\n\n*   **ICE's Role at Airports:**\n    *   **White House/Trump:** President Trump stated ICE agents would be doing \"security like no one has ever seen before, including the immediate arrest of all Illegal Immigrants.\" He later added, \"They're able to now arrest illegals as they come into the country... But that's not why they're there. They're really there to help.\"\n    *   **DHS/ICE Officials:** White House border czar Tom Homan and Acting Deputy TSA Administrator Adam Stahl clarified that ICE agents would assist with crowd control and general, non-specialized security functions, acting as a \"force multiplier\" to free up TSA agents for aviation-specific tasks. DHS acting assistant secretary Lauren Bis stated ICE would \"bolster TSA efforts to keep our skies safe and minimize air travel disruptions.\"\n    *   **Critics:** The American Federation of Government Employees (AFGE), representing TSA workers, stated ICE agents are \"not trained or certified in aviation security\" and lack the specialized skills required. Derrick Johnson, head of the NAACP, criticized the move, claiming agents are \"inadequately trained, armed, and instructed to profile people based on race and accent.\"\n*   **Tone and Focus:** WIRED's reporting is more investigative, focusing on the financial incentives and the discovery of non-public agreements in the 287(g) program, as well as eyewitness accounts and internal contradictions regarding airport deployments. The BBC's report primarily focuses on the airport deployment, citing official statements and the broader impact of the government shutdown on air travel.\n*   **Transparency:** WIRED explicitly highlights the conflicting language in Carroll's public 287(g) agreement versus its private service agreement, particularly concerning liability protection and public records access. The public agreement states Carroll \"may\" request DOJ representation and \"nothing herein limits\" compliance with state public records laws, while the private agreement pledges ICE \"will request that DOJ be responsible for the defense\" and states information is \"under the control of ICE,\" subject only to federal records requests.\n\n## Context & Background\n\nThe expansion of ICE's programs occurs amidst a partial government shutdown that began on February 14, leading to thousands of federal employees, including TSA agents, working without pay. This financial strain has resulted in widespread absences among TSA staff, creating significant operational disruptions at airports. The Trump administration has actively sought to expand immigration enforcement efforts, with the 287(g) program being a key component that deputizes local law enforcement to act as federal immigration agents. This deployment also comes after a period of declining public support for ICE over its immigration enforcement activities, including previous reports of raids using masks and unmarked vehicles, and allegations of the administration targeting specific communities like Somali Americans.\n\n## Implications\n\n*   **Airport Security and Efficiency:** In the short term, the deployment of ICE agents is intended to alleviate security bottlenecks caused by TSA absences, but it also raises questions about the agents' training for aviation security and their actual impact on efficiency, with some observers reporting agents \"simply standing around.\"\n*   **Blurring of Law Enforcement Roles:** The 287(g) program further blurs the lines between local policing and federal immigration enforcement, potentially transforming local police into extensions of ICE. This integration, driven by significant financial incentives, could shift local law enforcement priorities and create mistrust within immigrant communities.\n*   **Transparency and Accountability Concerns:** The existence of non-public agreements with different terms for liability and information disclosure raises serious questions about government transparency and the public's ability to hold local and federal agencies accountable for immigration enforcement actions.\n*   **Public and Political Fallout:** The deployments have intensified the political debate over immigration policy and the government shutdown. Democrats have resisted funding DHS without reforms to ICE, while airport leaders have urged Congress to end the shutdown due to \"significant, growing, and potentially long-lasting\" disruptions.\n\n## Notable Quotes\n\n*   \"I want to thank ICE because they stepped in so strongly. They'll do great\u2014and if that's not enough, I'll bring in the National Guard. We're not going to have the Democrats destroy our country.\" \u2014 President Donald Trump, via video.\n*   \"ICE agents are not trained or certified in aviation security. TSA officers spend months learning to detect explosives, weapons, and threats specifically designed to evade detection at checkpoints\u2014skills that require specialized instruction, hands-on practice, and ongoing recertification. You cannot improvise that.\" \u2014 Everett Kelley, President of the American Federation of Government Employees (AFGE).\n*   \"They are inadequately trained, armed, and instructed to profile people based on race and accent. What could possibly go wrong? We've seen this movie before.\" \u2014 Derrick Johnson, head of the civil rights organization NAACP.\n\n## Gaps & Uncertainties\n\n*   The exact scope of training ICE agents received, if any, for their specific roles in airport security remains unclear, with DHS not responding to questions on the matter.\n*   Whether ICE officers will actively conduct immigration enforcement actions and arrests *while* fulfilling their supportive roles at airports is a significant unanswered question, despite conflicting statements from officials.\n*   The full extent to which the non-public \"service agreements\" impact transparency and legal recourse for individuals affected by local 287(g) enforcement is still being assessed.\n*   The duration of the airport deployments and the resolution of the partial government shutdown, which is the underlying cause for the TSA staffing shortages, remain uncertain.",
+      "sources": [
+        {
+          "title": "ICE Is Paying the Salaries of This Town\u2019s Entire Police Force",
+          "link": "https://www.wired.com/story/ice-is-paying-the-salaries-of-this-towns-entire-police-force/",
+          "summary": "Under a Homeland Security program, police departments around the US are signing up to assist in immigration enforcement. The cops of Carroll, New Hampshire, are going all in\u2014and they\u2019re likely not alone.",
+          "published": "2026-03-24T03:30:00+00:00",
+          "source": "WIRED",
+          "id": "69bc1228d7f400200be20124",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "wired.com",
+            "similar_articles": 2,
+            "credibility_score": 85
+          },
+          "cluster": 0,
+          "x": -0.02032112455458925,
+          "y": 0.06638124775487832,
+          "ui_trend_num": 3
+        },
+        {
+          "title": "ICE Invades Airports Across the US",
+          "link": "https://www.wired.com/story/ice-invades-airports-across-the-us/",
+          "summary": "Agents from ICE are being deployed to over a dozen airports around the country, including New York, Atlanta, and Chicago.",
+          "published": "2026-03-23T11:22:09+00:00",
+          "source": "WIRED",
+          "id": "69c13b2c3bbc8df3ca220e5b",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "wired.com",
+            "similar_articles": 2,
+            "credibility_score": 85
+          },
+          "cluster": 0,
+          "x": 0.0036494406510215395,
+          "y": 0.12860910253920044,
+          "ui_trend_num": 3
+        },
+        {
+          "title": "ICE agents deploy to major US airports as security queues stretch for hours",
+          "link": "https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campaign=rss",
+          "summary": "Hundreds of ICE agents have been deployed to 14 airports, in cities including New York, Atlanta and Houston.",
+          "published": "2026-03-23T15:52:18+00:00",
+          "source": "BBC News",
+          "id": "https://www.bbc.com/news/articles/cx298j7xg0yo#1",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "bbc.com",
+            "similar_articles": 1,
+            "credibility_score": 70
+          },
+          "cluster": 0,
+          "x": 0.018870924982677693,
+          "y": 0.14440300356808536,
+          "ui_trend_num": 3
+        }
+      ],
+      "trend_size": 3
+    },
+    {
+      "trend_id": 4,
+      "briefing_type": "Emerging Topic",
+      "briefing": "# Colombian Military Plane Crash Kills At Least 66, Sparks Modernization Debate\n\n## Overview\n\nA Colombian Air Force C-130 Hercules transport plane crashed shortly after takeoff in the southern Putumayo province, near Puerto Legu\u00edzamo, resulting in the deaths of at least 66 military personnel and crew. The incident, one of the deadliest aviation accidents for Colombia's armed forces in recent history, occurred as the aircraft was transporting troops. While the cause remains under investigation, the tragedy has prompted President Gustavo Petro to blame bureaucratic delays for hindering military equipment modernization, highlighting critical safety concerns within the armed forces.\n\n## Key Developments\n\n*   The accident involved a US-made Lockheed Martin C-130 Hercules transport plane, which crashed in a rural area approximately two kilometers from Puerto Legu\u00edzamo airport, close to the border with Peru.\n*   Colombian Defence Minister Pedro S\u00e1nchez confirmed the crash, describing it as a \"tragic accident\" that is \"profoundly painful for the country.\"\n*   Initial reports from military sources indicated that 66 individuals died, comprising 58 soldiers, six air force personnel, and two police officers. While one source reported 114 army personnel and 11 crew (totaling 125) were on board, another suggested 121 people.\n*   Emergency teams, including soldiers and paramedics, were dispatched to the site, with footage showing locals assisting in transporting injured personnel. At least 77 individuals were reportedly rescued with injuries, flown to hospitals in Bogot\u00e1 and other locations.\n*   The Air Force commander, Carlos Fernando Silva, stated that details of the crash were unknown beyond the plane having a problem and going down.\n*   President Gustavo Petro expressed his grief on X, stating the \"horrendous accident... should not have happened\" and criticized \"bureaucratic problems\" that have stalled his plans to modernize the armed forces' equipment and aircraft fleet.\n\n## Perspectives & Differences\n\n*   **Casualty Numbers:** While both sources confirm \"at least 66\" fatalities, there are slight discrepancies regarding the total number of people on board and the injured count. BBC reports 114 army personnel and 11 crew (total 125) were on board, with \"dozens injured.\" The Guardian states 121 people were on board and \"at least 77 people were rescued from the crash site with injuries.\" The combined total of dead and injured reported by The Guardian (66 dead + 77 injured = 143) exceeds both reported capacities (121 or 125), suggesting ongoing uncertainty in the exact figures. The Defence Ministry spokesman clarified that officials are still investigating the final number of fatalities.\n*   **Cause of Crash:** Both sources agree the cause is under investigation. However, the BBC specifically mentions that ammunition being carried on board detonated due to a fire on the aircraft, citing Defence Minister S\u00e1nchez. The Guardian, also quoting S\u00e1nchez, explicitly stated that \"while the causes are still under investigation, it is already possible to rule out that the crash was caused by an attack from any of the numerous armed groups that plague Colombia\" and affirmed the aircraft was in \"airworthy condition\" with a \"duly qualified\" crew.\n*   **Tone of Reporting:** Both outlets maintain a largely factual and somber tone, focusing on the human tragedy and official responses.\n\n## Context & Background\n\nThe C-130 Hercules is a venerable US-made military transport aircraft, with Colombia having acquired its first models in the late 1960s. These planes are frequently used by the Colombian military to transport troops, particularly in operations related to the country's six-decade-long internal conflict. Colombia has recently modernized some of its older C-130s with newer models transferred from the US. This incident follows a similar crash last month in Bolivia, where another Bolivian Air Force C-130 Hercules crashed, killing at least 20 people.\n\n## Implications\n\nThe crash carries significant short-term and long-term implications. In the short term, it necessitates a thorough investigation into the cause, potential operational procedures, and aircraft maintenance. It also brings immense grief to the families of the deceased and places a burden on rescue and medical services for the injured. Long-term, the incident intensifies pressure on President Petro's administration to address the \"bureaucratic difficulties\" hindering military modernization, as he indicated. It raises questions about the age and maintenance of the military's fleet, potentially impacting morale and public trust in the armed forces' safety protocols. The tragedy could also influence future military procurement and budget allocations, with an emphasis on enhancing equipment safety and reliability.\n\n## Notable Quotes\n\n*   President Gustavo Petro wrote on X: \"This horrendous accident... should not have happened. I will allow no further delays, the lives of our young people are at stake.\"\n*   Colombian Defence Minister Pedro S\u00e1nchez described the incident as \"deeply sad for the country.\"\n*   President Petro also stated: \"If the civil or military administrative officials are not up to this challenge, they must be removed.\"\n\n## Gaps & Uncertainties\n\nThe precise cause of the crash remains officially undetermined, despite the Defence Minister ruling out an attack and affirming the aircraft's airworthiness. There is also ongoing ambiguity regarding the exact total number of individuals on board and the final count of injured survivors, as conflicting figures have been reported by different sources. Further investigation is needed to reconcile these numbers and provide a definitive account of the incident's circumstances.",
+      "sources": [
+        {
+          "title": "Colombian Military Plane Crash Kills 66 and Injures Dozens",
+          "link": "https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html",
+          "summary": "A military aircraft transporting 128 people was involved in an accident as it took off from southern Colombia, according to the authorities.",
+          "published": "2026-03-24T00:06:25+00:00",
+          "source": "NYT > World News",
+          "id": "https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "nytimes.com",
+            "similar_articles": 8,
+            "credibility_score": 100
+          },
+          "cluster": 3,
+          "x": 0.11299335905320244,
+          "y": 0.3293614089807333,
+          "ui_trend_num": 4
+        },
+        {
+          "title": "Colombian military plane crash kills at least 66",
+          "link": "https://www.bbc.com/news/articles/c8dlmrjn1l2o?at_medium=RSS&at_campaign=rss",
+          "summary": "Colombia's defence minister says it was a \"tragic accident\" but the cause is not yet clear.",
+          "published": "2026-03-23T21:22:21+00:00",
+          "source": "BBC News",
+          "id": "https://www.bbc.com/news/articles/c8dlmrjn1l2o#0",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "bbc.com",
+            "similar_articles": 2,
+            "credibility_score": 85
+          },
+          "cluster": 3,
+          "x": 0.12525360411485756,
+          "y": 0.321539128927606,
+          "ui_trend_num": 4
+        },
+        {
+          "title": "At least 66 killed after Colombian military plane crashes in southern Amazon",
+          "link": "https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash",
+          "summary": "<p> Transport plane carrying soldiers and crew crashed shortly after takeoff from Puerto Legu\u00edzamo, deep in Colombia\u2019s southern Amazon region</p><p>A Colombian military transport plane with 121 people on board, mostly soldiers, crashed shortly after takeoff in the country\u2019s south, killing at least 66 people, authorities said.</p><p>The defence minister, Pedro S\u00e1nchez, said the accident happened as the Lockheed Martin Hercules C-130 plane was taking off from <a href=\"https://www.theguardian.com/world/2000/mar/10/martinhodgson\">Puerto Legu\u00edzamo</a>, deep in <a href=\"https://www.theguardian.com/world/colombia\">Colombia</a>\u2019s southern Amazon region, on the border with Peru, as it transported troops from the armed forces.</p> <a href=\"https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash\">Continue reading...</a>",
+          "published": "2026-03-23T19:11:17+00:00",
+          "source": "World news | The Guardian",
+          "id": "https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash",
+          "verification_status": "verified",
+          "verification_detail": {
+            "domain": "theguardian.com",
+            "similar_articles": 3,
+            "credibility_score": 100
+          },
+          "cluster": 3,
+          "x": 0.10294372441714891,
+          "y": 0.3211825529215102,
+          "ui_trend_num": 4
+        }
+      ],
+      "trend_size": 3
+    }
+  ],
+  "all_articles": [
+    {
+      "title": "A mission NASA might kill is still returning fascinating science from Jupiter",
+      "link": "https://arstechnica.com/space/2026/03/a-mission-nasa-might-kill-is-still-returning-fascinating-science-from-jupiter/",
+      "summary": "\"We can\u2019t quite afford to support everything that we have done in the past.\"",
+      "published": "2026-03-23T17:19:31+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/space/2026/03/a-mission-nasa-might-kill-is-still-returning-fascinating-science-from-jupiter/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.11254659408430362,
+      "y": -0.03526217702438548
+    },
+    {
+      "title": "Trump's MAHA pick for surgeon general flounders amid GOP doubts",
+      "link": "https://arstechnica.com/health/2026/03/trumps-maha-pick-for-surgeon-general-flounders-amid-gop-doubts/",
+      "summary": "She stalled over MAHA woo-woo, anti-vaccine views, and lacking medical background.",
+      "published": "2026-03-23T16:13:21+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/health/2026/03/trumps-maha-pick-for-surgeon-general-flounders-amid-gop-doubts/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.02855243369511939,
+      "y": 0.014583882796288885
+    },
+    {
+      "title": "Nvidia CEO tries to explain why DLSS 5 isn\u2019t just \u201cAI slop\u201d",
+      "link": "https://arstechnica.com/gaming/2026/03/nvidia-ceo-tries-to-explain-why-dlss-5-isnt-just-ai-slop/",
+      "summary": "If game makers don\u2019t like it, \u201cthey could decide not to use it, you know?\"",
+      "published": "2026-03-23T15:49:51+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/gaming/2026/03/nvidia-ceo-tries-to-explain-why-dlss-5-isnt-just-ai-slop/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.20150316762883763,
+      "y": -0.06995486521129099
+    },
+    {
+      "title": "After hackers hit an Iowa company, cars around the country failed to start",
+      "link": "https://arstechnica.com/security/2026/03/after-hack-some-ignition-interlock-users-couldnt-start-their-own-cars/",
+      "summary": "If you don't calibrate your interlock in time, your vehicle is dead.",
+      "published": "2026-03-23T15:40:14+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/security/2026/03/after-hack-some-ignition-interlock-users-couldnt-start-their-own-cars/",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 4,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": -0.1078953343959401,
+      "y": 0.04319451135320085
+    },
+    {
+      "title": "LG Display starts mass-producing LTPO-like 1 Hz LCD displays for laptops",
+      "link": "https://arstechnica.com/gadgets/2026/03/lg-display-starts-mass-producing-ltpo-like-1-hz-lcd-displays-for-laptops/",
+      "summary": "Dell XPS laptops will be the first to use the display tech that reaches up to 120 Hz.",
+      "published": "2026-03-23T14:59:09+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/gadgets/2026/03/lg-display-starts-mass-producing-ltpo-like-1-hz-lcd-displays-for-laptops/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.26447476397909636,
+      "y": -0.04093209211072278
+    },
+    {
+      "title": "US to pay TotalEnergies $1 billion to stop developing offshore wind in US",
+      "link": "https://arstechnica.com/science/2026/03/trumps-latest-anti-wind-effort-pay-companies-to-abandon-offshore-leases/",
+      "summary": "Payment reimburses the company for two leases, one for a massive 3 GW wind farm.",
+      "published": "2026-03-23T14:00:53+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/science/2026/03/trumps-latest-anti-wind-effort-pay-companies-to-abandon-offshore-leases/",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": -0.06900588937735469,
+      "y": -0.07505614623867427
+    },
+    {
+      "title": "Intuit beats FTC in court, ending restrictions on \"free\" TurboTax ads",
+      "link": "https://arstechnica.com/tech-policy/2026/03/intuit-beats-ftc-in-court-ending-restrictions-on-free-turbotax-ads/",
+      "summary": "Biden-era punishment tossed; Intuit now has more friendly regulators under Trump.",
+      "published": "2026-03-23T13:35:58+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/tech-policy/2026/03/intuit-beats-ftc-in-court-ending-restrictions-on-free-turbotax-ads/",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.18427607702172585,
+      "y": -0.06721447065803955
+    },
+    {
+      "title": "Apple will talk iOS 27, macOS 27, and more at WWDC 2026 on June 8",
+      "link": "https://arstechnica.com/gadgets/2026/03/apple-will-talk-ios-27-macos-27-and-more-at-wwdc-2026-on-june-8/",
+      "summary": "WWDC is often light on hardware, but it's where big software announcements happen.",
+      "published": "2026-03-23T13:04:59+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/gadgets/2026/03/apple-will-talk-ios-27-macos-27-and-more-at-wwdc-2026-on-june-8/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.2554248003232036,
+      "y": -0.06620597997544399
+    },
+    {
+      "title": "Long fingernails vs. touchscreens: This nail polish could help",
+      "link": "https://arstechnica.com/science/2026/03/long-fingernails-vs-touchscreens-this-nail-polish-could-help/",
+      "summary": "Undergraduate's prototype conductive nail polish could turn long fingernails into touchscreen styluses.",
+      "published": "2026-03-23T12:29:46+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/science/2026/03/long-fingernails-vs-touchscreens-this-nail-polish-could-help/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.20850774576110948,
+      "y": -0.01838883735360197
+    },
+    {
+      "title": "Republicans in Congress add $250 annual federal EV tax to transport bill",
+      "link": "https://arstechnica.com/cars/2026/03/republicans-in-congress-add-250-annual-federal-ev-tax-to-transport-bill/",
+      "summary": "Five principles should determine how you fund transport, says Consumer Reports.",
+      "published": "2026-03-23T11:59:29+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/cars/2026/03/republicans-in-congress-add-250-annual-federal-ev-tax-to-transport-bill/",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.15266801469398875,
+      "y": -0.052320547188825846
+    },
+    {
+      "title": "As teens await sentencing for nudifying girls, parents aim to sue school",
+      "link": "https://arstechnica.com/tech-policy/2026/03/as-teens-await-sentencing-for-nudifying-girls-parents-aim-to-sue-school/",
+      "summary": "Teens will be sentenced Wednesday after admitting to creating AI CSAM.",
+      "published": "2026-03-23T11:49:49+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/tech-policy/2026/03/as-teens-await-sentencing-for-nudifying-girls-parents-aim-to-sue-school/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.07880159394950026,
+      "y": 0.07693852249119344
+    },
+    {
+      "title": "A bit of good news: It's possible to turn around a groundwater crisis",
+      "link": "https://arstechnica.com/science/2026/03/a-bit-of-good-news-its-possible-to-turn-around-a-groundwater-crisis/",
+      "summary": "Analyzing dozens of cases around the world yields some practical lessons.",
+      "published": "2026-03-23T10:35:51+00:00",
+      "source": "Ars Technica - All content",
+      "id": "https://arstechnica.com/science/2026/03/a-bit-of-good-news-its-possible-to-turn-around-a-groundwater-crisis/",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "arstechnica.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.09829229346211285,
+      "y": -0.05178701907894347
+    },
+    {
+      "title": "The Trip to the Far Side of the Moon",
+      "link": "https://www.wired.com/story/the-trip-to-the-far-side-of-the-moon-nasa-artemis/",
+      "summary": "As soon as April 1, four people will embark on a journey that will take them farther from the Earth than anyone has ever traveled before.",
+      "published": "2026-03-24T04:00:00+00:00",
+      "source": "WIRED",
+      "id": "6977959f116c8ca5fe7e1c81",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 6,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": -0.09799741006806122,
+      "y": 0.007159925693035627
+    },
+    {
+      "title": "Can Modular Phone Accessories Finally Evolve Beyond MagSafe?",
+      "link": "https://www.wired.com/story/can-modular-phone-accessories-finally-evolve-beyond-magsafe/",
+      "summary": "True modular smartphone hardware never went mainstream. That could change as phone makers look beyond magnets.",
+      "published": "2026-03-24T04:00:00+00:00",
+      "source": "WIRED",
+      "id": "69bcdef5b86b802c792faa8c",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.2662751459338932,
+      "y": -0.07627513780867275
+    },
+    {
+      "title": "What's the Best Kindle of 2026? (So Far)",
+      "link": "https://www.wired.com/gallery/best-kindle/",
+      "summary": "Here\u2019s how Amazon\u2019s ebook readers stack up\u2014and which one might be right for you.",
+      "published": "2026-03-24T03:38:00+00:00",
+      "source": "WIRED",
+      "id": "5c9126abe48fae1a55ed4ea6",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": -0.2596082760348938,
+      "y": -0.08304547965167504
+    },
+    {
+      "title": "ICE Is Paying the Salaries of This Town\u2019s Entire Police Force",
+      "link": "https://www.wired.com/story/ice-is-paying-the-salaries-of-this-towns-entire-police-force/",
+      "summary": "Under a Homeland Security program, police departments around the US are signing up to assist in immigration enforcement. The cops of Carroll, New Hampshire, are going all in\u2014and they\u2019re likely not alone.",
+      "published": "2026-03-24T03:30:00+00:00",
+      "source": "WIRED",
+      "id": "69bc1228d7f400200be20124",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 0,
+      "x": -0.02032112455458925,
+      "y": 0.06638124775487832,
+      "ui_trend_num": 3
+    },
+    {
+      "title": "20% Off Brooks Promo Code & Deals for | March 2026",
+      "link": "https://www.wired.com/story/brooks-promo-code/",
+      "summary": "Enjoy 20% off your first order with a Brooks coupon code, plus top discounts and deals on our favorite Brooks running shoes.",
+      "published": "2026-03-23T23:30:00+00:00",
+      "source": "WIRED",
+      "id": "673bb0142598c31aeeee086e",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": -0.29500488857005736,
+      "y": -0.08981541929452584
+    },
+    {
+      "title": "Ulta Coupons and Deals: Up to 50% Off in March",
+      "link": "https://www.wired.com/story/ulta-coupon/",
+      "summary": "Shop the latest beauty trends and save big using an Ulta promo code for beauty tech, makeup, and more.",
+      "published": "2026-03-23T23:30:00+00:00",
+      "source": "WIRED",
+      "id": "69c14a90c8c019cf2b9a5309",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": -0.29331996819119055,
+      "y": -0.09742777503594849
+    },
+    {
+      "title": "Sony Promo Codes and Discounts: 45% Off",
+      "link": "https://www.wired.com/story/sony-promo-code/",
+      "summary": "Upgrade your setup with Sony\u2019s newest releases. Save on industry-leading noise-canceling audio, and pro-level Alpha cameras.",
+      "published": "2026-03-23T23:30:00+00:00",
+      "source": "WIRED",
+      "id": "698f495a35011a6870d1abf0",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": -0.33491490568582316,
+      "y": -0.11946868839411719
+    },
+    {
+      "title": "Design Within Reach Promo Codes: 30% Off | March 2026",
+      "link": "https://www.wired.com/story/design-within-reach-promo-code/",
+      "summary": "Get 30% off, 20% off, and free shipping with our Design Within Reach coupon codes, plus up to 50% off furniture with these special discounts.",
+      "published": "2026-03-23T23:30:00+00:00",
+      "source": "WIRED",
+      "id": "671815d1aedef2273dbb63c7",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": -0.3215509487534212,
+      "y": -0.1030476139537828
+    },
+    {
+      "title": "A Billionaire-Backed Startup Wants to Grow 'Organ Sacks' to Replace Animal Testing",
+      "link": "https://www.wired.com/story/a-billionaire-backed-startup-wants-to-grow-organ-sacks-to-replace-animal-testing/",
+      "summary": "R3 Bio has a bold idea for replacing lab animals: genetically-engineered whole organ systems that lack a brain. The long-term goal, says a cofounder, is to make human versions.",
+      "published": "2026-03-23T14:16:05+00:00",
+      "source": "WIRED",
+      "id": "69bb130bc28f59d9e9a2aaf5",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.18557768511874545,
+      "y": 0.0032545181083335458
+    },
+    {
+      "title": "A Mysterious Numbers Station Is Broadcasting Through the Iran War",
+      "link": "https://www.wired.com/story/a-mysterious-numbers-station-is-broadcasting-through-the-iran-war/",
+      "summary": "First heard as US and Israeli strikes on Iran began, the shortwave broadcast has since been traced to a US military base in Germany\u2014but its purpose and its operator remain unclear.",
+      "published": "2026-03-23T13:29:17+00:00",
+      "source": "WIRED",
+      "id": "69c137c8085bdd9bc66fd6e3",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": 0.09998664056763325,
+      "y": -0.08029303190960206
+    },
+    {
+      "title": "Our Favorite Budget Earbuds Are Literally $19",
+      "link": "https://www.wired.com/story/jlab-go-pop-deal-326/",
+      "summary": "Do you need a pair of cheap earbuds? These JLabs are the ones.",
+      "published": "2026-03-23T12:19:57+00:00",
+      "source": "WIRED",
+      "id": "69c16e83471cd37214010c12",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.2854764963026508,
+      "y": -0.07964517259160499
+    },
+    {
+      "title": "ICE Invades Airports Across the US",
+      "link": "https://www.wired.com/story/ice-invades-airports-across-the-us/",
+      "summary": "Agents from ICE are being deployed to over a dozen airports around the country, including New York, Atlanta, and Chicago.",
+      "published": "2026-03-23T11:22:09+00:00",
+      "source": "WIRED",
+      "id": "69c13b2c3bbc8df3ca220e5b",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 0,
+      "x": 0.0036494406510215395,
+      "y": 0.12860910253920044,
+      "ui_trend_num": 3
+    },
+    {
+      "title": "Polymarket\u2019s Coming-Out Party in Washington Was a Disaster",
+      "link": "https://www.wired.com/story/polymarket-wanted-a-coming-out-party-in-washington-it-was-a-disaster/",
+      "summary": "At the Polymarket pop-up in DC, attendees were supposed to be able to bet on geopolitical crises in real time with their friends. That didn\u2019t happen.",
+      "published": "2026-03-23T11:18:03+00:00",
+      "source": "WIRED",
+      "id": "69bc0705ec2e92eafec7b03c",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "wired.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": -0.10307984157503872,
+      "y": -0.04811191006622687
+    },
+    {
+      "title": "Judge Hears State Challenge to Trump\u2019s Tech Deal Settlement",
+      "link": "https://www.nytimes.com/2026/03/23/technology/hpe-juniper-hearing-settlement.html",
+      "summary": "Democratic state attorneys general are fighting the Justice Department\u2019s clearance of a $14 billion deal by Hewlett Packard Enterprise, arguing it was ineffective and corrupt.",
+      "published": "2026-03-23T15:09:49+00:00",
+      "source": "NYT > Technology",
+      "id": "https://www.nytimes.com/2026/03/23/technology/hpe-juniper-hearing-settlement.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.0782310356137156,
+      "y": -0.07142093166427026
+    },
+    {
+      "title": "U.S. and Iran Send Conflicting Signals on Peace Prospects",
+      "link": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump",
+      "summary": "President Trump said talks were underway. A top Iranian official denied that, while other Iranians said messages were being traded through intermediaries.",
+      "published": "2026-03-24T01:34:18+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": 1,
+      "x": 0.26291198592405907,
+      "y": -0.1534903193713353,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Canada\u2019s Military Wants to Prove It Can Defend the High Arctic",
+      "link": "https://www.nytimes.com/2026/03/23/world/canada/canada-arctic-territory-military.html",
+      "summary": "Canadian soldiers transported M777 howitzers to the High Arctic to show their ability to fight in an increasingly contested part of the world. It did not go as planned.",
+      "published": "2026-03-23T14:01:03+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/canada/canada-arctic-territory-military.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": 0.023364631449965218,
+      "y": 0.038636165515751345
+    },
+    {
+      "title": "A Choice of Deadly Drones Is Only a Few Clicks Away for Ukrainian Troops",
+      "link": "https://www.nytimes.com/2026/03/23/world/europe/ukraine-drones-marketplace-military-russia.html",
+      "summary": "Ukraine has created online marketplaces to let units select their own drones, a break from generations of standardized and centralized weapons procurement.",
+      "published": "2026-03-23T22:29:56+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/europe/ukraine-drones-marketplace-military-russia.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.017716538557345396,
+      "y": -0.00552735211445157
+    },
+    {
+      "title": "Caught Between Two Conflicts, Afghans Flee Iran",
+      "link": "https://www.nytimes.com/2026/03/23/world/asia/iran-afghanistan-border-refugees.html",
+      "summary": "The war in Iran is choking off Afghanistan\u2019s main economic lifeline and has forced at least 70,000 Afghan workers and students there back home to a nation embroiled in another conflict.",
+      "published": "2026-03-23T13:22:15+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/asia/iran-afghanistan-border-refugees.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": 0.1280391585114968,
+      "y": -0.05545759997869493
+    },
+    {
+      "title": "Why the BTS Comeback Concert Was a \u2018Disaster\u2019 for Some Businesses",
+      "link": "https://www.nytimes.com/2026/03/23/world/asia/bts-concert-seoul-turnout-hybe-shares.html",
+      "summary": "The turnout for the K-pop titans\u2019 show was much lower than projected by officials, hitting the bottom line of some restaurants. Shares in the group\u2019s management company also fell.",
+      "published": "2026-03-23T23:59:41+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/asia/bts-concert-seoul-turnout-hybe-shares.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.07513064598929342,
+      "y": 0.014501955459923437
+    },
+    {
+      "title": "Italians Reject Judicial Overhaul, Undermining Meloni",
+      "link": "https://www.nytimes.com/2026/03/23/world/europe/italy-referendum-judiciary-meloni.html",
+      "summary": "Some 54 percent of voters spurned a government plan to change how jurists are supervised. It presented Prime Minister Giorgia Meloni with her biggest domestic challenge since her election in 2022.",
+      "published": "2026-03-23T13:16:53+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/europe/italy-referendum-judiciary-meloni.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 2,
+      "x": 0.0403300709081716,
+      "y": 0.020532890826591717
+    },
+    {
+      "title": "Taiwan Debates Military Spending as Choices Over U.S. and China Loom",
+      "link": "https://www.nytimes.com/2026/03/23/world/asia/taiwan-defense-budget-china-us.html",
+      "summary": "Tensions in the opposition Nationalist Party could surface this week as lawmakers argue over additional defense funding intended to counter Beijing\u2019s growing might.",
+      "published": "2026-03-23T13:23:26+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/asia/taiwan-defense-budget-china-us.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": 0.07572879473809187,
+      "y": -0.056740921143888096
+    },
+    {
+      "title": "Colombian Military Plane Crash Kills 66 and Injures Dozens",
+      "link": "https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html",
+      "summary": "A military aircraft transporting 128 people was involved in an accident as it took off from southern Colombia, according to the authorities.",
+      "published": "2026-03-24T00:06:25+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 8,
+        "credibility_score": 100
+      },
+      "cluster": 3,
+      "x": 0.11299335905320244,
+      "y": 0.3293614089807333,
+      "ui_trend_num": 4
+    },
+    {
+      "title": "Government Cuts Gut the Memory of Argentina\u2019s Dirty War",
+      "link": "https://www.nytimes.com/2026/03/24/world/americas/government-cuts-argentina-dirty-war.html",
+      "summary": "Fifty years after the military dictatorship, Argentina\u2019s government is defunding human rights groups and promoting a revisionist account of the junta\u2019s crimes.",
+      "published": "2026-03-24T03:31:04+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/24/world/americas/government-cuts-argentina-dirty-war.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.033250704358807746,
+      "y": 0.08217263546502272
+    },
+    {
+      "title": "Europe Clinches Critical Mineral Access With Australian Trade Deal",
+      "link": "https://www.nytimes.com/2026/03/24/world/europe/europe-australian-trade-deal.html",
+      "summary": "The European Union and Australia have shaken hands on a trade deal that would improve access to aluminum, lithium and other critical minerals for the 27-nation bloc.",
+      "published": "2026-03-24T01:50:39+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/24/world/europe/europe-australian-trade-deal.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 4,
+      "x": -0.06987528665109718,
+      "y": -0.0752357241323734
+    },
+    {
+      "title": "Tango Therapy: How the Dance of Passion Is Helping Parkinson\u2019s Patients",
+      "link": "https://www.nytimes.com/2026/03/24/health/tango-therapy-parkinsons.html",
+      "summary": "Once a week, patients in an Argentine hospital with Parkinson\u2019s disease use the movements of tango to help address issues of balance, stiffness and coordination.",
+      "published": "2026-03-24T01:30:20+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/24/health/tango-therapy-parkinsons.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.07711104180923467,
+      "y": 0.06232967565928786
+    },
+    {
+      "title": "Here\u2019s the latest.",
+      "link": "https://www.nytimes.com/live/2026/03/24/world/iran-war-trump-oil/heres-the-latest",
+      "summary": "",
+      "published": "2026-03-24T02:52:29+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/live/2026/03/24/world/iran-war-trump-oil/heres-the-latest",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 5,
+      "x": -0.08062357503597763,
+      "y": -0.04296663700526051
+    },
+    {
+      "title": "Ukraine Spent Big to Shield Energy Industry From Drones. Is the Mideast Next?",
+      "link": "https://www.nytimes.com/2026/03/24/world/europe/ukraine-middle-east-oil-and-gas-drones.html",
+      "summary": "With the use of electronic jamming systems and interceptor drones, the Ukrainian national oil and gas company may be a model for others.",
+      "published": "2026-03-24T03:44:42+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/24/world/europe/ukraine-middle-east-oil-and-gas-drones.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": 0.03637886517551125,
+      "y": -0.06671251850362546
+    },
+    {
+      "title": "Trump Sours on British Leader Over Iran War: \u2018What If Donald Shouts at Me?\u2019",
+      "link": "https://www.nytimes.com/2026/03/24/world/europe/trump-starmer-snl.html",
+      "summary": "President Trump once called Prime Minister Keir Starmer a friend. But Mr. Starmer\u2019s decision not to join the attacks on Iran has led to merciless mocking by the president.",
+      "published": "2026-03-24T02:46:10+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/24/world/europe/trump-starmer-snl.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": -1,
+      "x": 0.1613156374375834,
+      "y": -0.0981907145042207
+    },
+    {
+      "title": "Pakistan Dials Up Its Information War",
+      "link": "https://www.nytimes.com/2026/03/24/world/asia/pakistan-media-news-misinformation.html",
+      "summary": "New, friendly media operations and expanded state-run television are pushing Pakistan\u2019s message while independent news outlets face repression.",
+      "published": "2026-03-23T22:30:11+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/24/world/asia/pakistan-media-news-misinformation.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": 0.09965068421641503,
+      "y": -0.08274123318541772
+    },
+    {
+      "title": "How North Korea\u2019s Kim Jong-un Is Using the Iran War to Justify His Nuclear Arsenal",
+      "link": "https://www.nytimes.com/2026/03/23/world/asia/north-korea-kim-iran-nuclear.html",
+      "summary": "He delivered a lengthy speech at his country\u2019s rubber-stamp Parliament, declaring that his nuclear power will shield his country from American hostility.",
+      "published": "2026-03-23T22:14:07+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/asia/north-korea-kim-iran-nuclear.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": 0.17247735125528724,
+      "y": -0.15087943502600332
+    },
+    {
+      "title": "Hasan Piker Defends Upscale Lodging During Humanitarian Mission in Cuba",
+      "link": "https://www.nytimes.com/2026/03/23/world/americas/hasan-piker-humanitarian-mission-cuba.html",
+      "summary": "He helped bring attention to a group delivering humanitarian aid to Cuba, which was criticized for staying in an upscale hotel as Cubans faced another blackout.",
+      "published": "2026-03-23T22:57:33+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/americas/hasan-piker-humanitarian-mission-cuba.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.0015074746024969718,
+      "y": 0.03639567183839937
+    },
+    {
+      "title": "Trump Delays Threat to Iran, but War Negotiations Are in Early Stage",
+      "link": "https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html",
+      "summary": "President Trump postponed his threat to strike power plants in Iran, citing \u201cproductive conversations\u201d with the Iranians. But officials said the talks were in an early stage and not substantive.",
+      "published": "2026-03-23T18:44:14+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 4,
+        "credibility_score": 100
+      },
+      "cluster": 1,
+      "x": 0.23841244696672423,
+      "y": -0.18489271678461427,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Here\u2019s What Happened in the War in the Middle East on Monday",
+      "link": "https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html",
+      "summary": "Conflicting signals about whether any negotiations to end the fighting were in progress created confusion.",
+      "published": "2026-03-23T17:07:30+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 5,
+        "credibility_score": 100
+      },
+      "cluster": 1,
+      "x": 0.17361510563909524,
+      "y": -0.07169203053263712,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Trump Says U.S. Is Negotiating With Iran, Which Publicly Denies His Claim",
+      "link": "https://www.nytimes.com/2026/03/23/world/middleeast/iran-war-trump.html",
+      "summary": "\u201cVery, very strong talks,\u201d President Trump claimed. Fake news, replied an Iranian parliamentary leader.",
+      "published": "2026-03-23T18:18:51+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/middleeast/iran-war-trump.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 4,
+        "credibility_score": 100
+      },
+      "cluster": 1,
+      "x": 0.24135892831850264,
+      "y": -0.16909288821200577,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "\u2018Strong Talks\u2019 With Iran?",
+      "link": "https://www.nytimes.com/2026/03/23/world/us-iran-talks-denmark-election.html",
+      "summary": "President Trump\u2019s latest statements about discussions with Iran don\u2019t necessarily signal an end in sight to the war, but they do buy him some time.",
+      "published": "2026-03-24T01:05:21+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/us-iran-talks-denmark-election.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 1,
+      "x": 0.24296839308022147,
+      "y": -0.20588754253780264,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Trump Delays Energy Strikes, but Iran\u2019s Infrastructure Is Already Battered",
+      "link": "https://www.nytimes.com/2026/03/23/world/middleeast/trump-iran-battered-infrastructure.html",
+      "summary": "U.S. and Israeli attacks on power plants and other civilian infrastructure risk escalating the conflict across the region, and angering Iranians who oppose the government.",
+      "published": "2026-03-23T14:55:19+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/middleeast/trump-iran-battered-infrastructure.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": 1,
+      "x": 0.23072299882963118,
+      "y": -0.16332895397256045,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Energy Crisis Will Not Be Resolved Quickly if War Ends, I.E.A. Chief Warns",
+      "link": "https://www.nytimes.com/2026/03/23/world/middleeast/energy-crisis-iea-warning.html",
+      "summary": "Fatih Birol, the leader of the International Energy Agency, said the Iran war was a bigger crisis than the two oil shocks in the 1970s combined.",
+      "published": "2026-03-23T14:06:19+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/middleeast/energy-crisis-iea-warning.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 6,
+      "x": 0.10259827346564868,
+      "y": -0.1500696299564518
+    },
+    {
+      "title": "Israel Says Its Own Artillery Killed a Farmer, Not a Hezbollah Rocket",
+      "link": "https://www.nytimes.com/2026/03/23/world/middleeast/israel-says-its-own-artillery-killed-a-farmer-not-a-hezbollah-rocket.html",
+      "summary": "Ofer Moskovitz, 60, an avocado farmer in a kibbutz on Israel\u2019s border with Lebanon, was killed Sunday when the car he was riding in was hit.",
+      "published": "2026-03-23T11:17:09+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/middleeast/israel-says-its-own-artillery-killed-a-farmer-not-a-hezbollah-rocket.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.16960607021744936,
+      "y": 0.05801102283365184
+    },
+    {
+      "title": "Lionel Jospin, Who Helped Set France on Socialist Path, Dies at 88",
+      "link": "https://www.nytimes.com/2026/03/23/world/europe/lionel-jospin-dead.html",
+      "summary": "As prime minister beginning in 1997, he introduced a national 35-hour workweek and oversaw the replacement of the franc with the euro.",
+      "published": "2026-03-23T15:02:43+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/europe/lionel-jospin-dead.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.010744203419758926,
+      "y": 0.06515672896053513
+    },
+    {
+      "title": "Diabetes, Overlooked and Unchecked, Poses New Risks in Africa",
+      "link": "https://www.nytimes.com/2026/03/23/health/diabetes-africa-cameroon-type-5.html",
+      "summary": "As deaths from diabetes start to rival those from infectious threats like malaria, a new form of the condition linked to malnutrition is surfacing in patients who can afford neither screening nor care.",
+      "published": "2026-03-23T17:02:45+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/health/diabetes-africa-cameroon-type-5.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.0448483137917224,
+      "y": 0.06078896550020701
+    },
+    {
+      "title": "London Arson Attack on Jewish Ambulance Service Investigated as Hate Crime, Police Say",
+      "link": "https://www.nytimes.com/2026/03/23/world/europe/jewish-ambulances-fire-london.html",
+      "summary": "The city\u2019s main police force said it was investigating fires that struck four ambulances as an antisemitic hate crime.",
+      "published": "2026-03-23T14:32:43+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/23/world/europe/jewish-ambulances-fire-london.html",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 7,
+      "x": 0.1196142417304945,
+      "y": 0.13501628242852384
+    },
+    {
+      "title": "Here\u2019s the latest.",
+      "link": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump/heres-the-latest",
+      "summary": "",
+      "published": "2026-03-23T20:11:50+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump/heres-the-latest",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 5,
+      "x": -0.08062357503597763,
+      "y": -0.04296663700526051
+    },
+    {
+      "title": "Here\u2019s What Happened in the War in the Middle East on Saturday",
+      "link": "https://www.nytimes.com/2026/03/21/world/middleeast/middle-east-war-recap.html",
+      "summary": "An Iranian missile wounded dozens in Dimona, a city near Israel\u2019s main nuclear research facility, as Tehran showed no signs of backing down.",
+      "published": "2026-03-23T09:51:39+00:00",
+      "source": "NYT > World News",
+      "id": "https://www.nytimes.com/2026/03/21/world/middleeast/middle-east-war-recap.html",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "nytimes.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": 1,
+      "x": 0.20543315443816318,
+      "y": -0.0785108895997911,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Iran conflict tests Pakistan amid own border clashes as Islamabad touted as venue for US-Tehran talks",
+      "link": "https://www.foxnews.com/world/iran-conflict-tests-pakistan-amid-own-border-clashes-islamabad-touted-venue-us-tehran-talks",
+      "summary": "Pakistan, the only nuclear-armed Muslim state, faces mounting pressure as its Saudi defense pact and Iran ties clash amid the intensifying regional war.",
+      "published": "2026-03-23T15:54:43+00:00",
+      "source": "Latest World News on Fox News",
+      "id": "https://www.foxnews.com/world/iran-conflict-tests-pakistan-amid-own-border-clashes-islamabad-touted-venue-us-tehran-talks",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "foxnews.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.23237376184582564,
+      "y": -0.11962232257037286
+    },
+    {
+      "title": "UK counterterrorism police probe antisemitic arson attack as Iran-linked group claims responsibility",
+      "link": "https://www.foxnews.com/world/uk-counterterrorism-police-probe-antisemitic-arson-attack-iran-linked-group-claims-responsibility",
+      "summary": "An Iran-linked group claims responsibility for torching Jewish ambulances outside a Golders Green synagogue in London as counterterrorism police investigate.",
+      "published": "2026-03-23T12:39:25+00:00",
+      "source": "Latest World News on Fox News",
+      "id": "https://www.foxnews.com/world/uk-counterterrorism-police-probe-antisemitic-arson-attack-iran-linked-group-claims-responsibility",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "foxnews.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 7,
+      "x": 0.18438909905534023,
+      "y": 0.05723938729825631
+    },
+    {
+      "title": "EU blocks US vote to define gender as biological men and women at UN women\u2019s forum",
+      "link": "https://www.foxnews.com/world/eu-blocks-us-vote-define-gender-biological-men-women-un-womens-forum",
+      "summary": "The EU used a procedural motion to block a U.S. resolution at the United Nations that sought to define gender as referring to biological men and women, leaving it without a vote.",
+      "published": "2026-03-23T12:36:54+00:00",
+      "source": "Latest World News on Fox News",
+      "id": "https://www.foxnews.com/world/eu-blocks-us-vote-define-gender-biological-men-women-un-womens-forum",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "foxnews.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.011721091307908875,
+      "y": 0.018459267758015378
+    },
+    {
+      "title": "Ultimatums, diplomacy and a trip to Graceland as Trump eyes a deal with Iran",
+      "link": "https://www.bbc.com/news/articles/c895v5pq5p1o?at_medium=RSS&at_campaign=rss",
+      "summary": "America may be a nation at war, but the president's activities have been a mix of diplomacy and diversions - with the occasional swing toward the surreal.",
+      "published": "2026-03-23T21:11:31+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c895v5pq5p1o#0",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": 1,
+      "x": 0.2189855452846087,
+      "y": -0.16010001449343603,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "'Like the plane got cut in half': LaGuardia crash that killed two pilots now under investigation",
+      "link": "https://www.bbc.com/news/articles/c78rdze8zvjo?at_medium=RSS&at_campaign=rss",
+      "summary": "In the aftermath of the collision of Air Canada flight AC8646 with a fire truck in New York, US transportation chief Sean Duffy emphasized that seat belts helped save lives",
+      "published": "2026-03-23T15:43:47+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c78rdze8zvjo#0",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": 8,
+      "x": 0.031041366678766065,
+      "y": 0.3661920196428547,
+      "ui_trend_num": 2
+    },
+    {
+      "title": "Inside the alleged Russian operation to trigger anti-government protests in Angola",
+      "link": "https://www.bbc.com/news/articles/c1mklzkz41jo?at_medium=RSS&at_campaign=rss",
+      "summary": "A group of Russians and Angolans are going on trial in Angola after being accused of fomenting protests, which they deny.",
+      "published": "2026-03-23T18:48:10+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c1mklzkz41jo#0",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.04140559413443076,
+      "y": 0.05927309235158736
+    },
+    {
+      "title": "Colombian military plane crash kills at least 66",
+      "link": "https://www.bbc.com/news/articles/c8dlmrjn1l2o?at_medium=RSS&at_campaign=rss",
+      "summary": "Colombia's defence minister says it was a \"tragic accident\" but the cause is not yet clear.",
+      "published": "2026-03-23T21:22:21+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c8dlmrjn1l2o#0",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 3,
+      "x": 0.12525360411485756,
+      "y": 0.321539128927606,
+      "ui_trend_num": 4
+    },
+    {
+      "title": "China dials back on fuel price hikes to 'reduce burden' on drivers",
+      "link": "https://www.bbc.com/news/articles/cwyvxejqyx4o?at_medium=RSS&at_campaign=rss",
+      "summary": "It comes as countries across the region are taking various measures to weather the soaring cost of fuel.",
+      "published": "2026-03-24T00:26:42+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/cwyvxejqyx4o#0",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.0332725408724098,
+      "y": -0.0781826544120869
+    },
+    {
+      "title": "Oil falls and shares rebound after Trump says talks have been held to end war",
+      "link": "https://www.bbc.com/news/articles/czex56kwxxzo?at_medium=RSS&at_campaign=rss",
+      "summary": "Energy prices fall and stock markets rebound after the US president says \"very good and productive\" talks have been held.",
+      "published": "2026-03-23T14:51:51+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/czex56kwxxzo#0",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": 0.10307209090946799,
+      "y": -0.13238182414806648
+    },
+    {
+      "title": "Australia and EU agree sweeping trade deal in face of global uncertainty",
+      "link": "https://www.bbc.com/news/articles/cly6g6l6lq7o?at_medium=RSS&at_campaign=rss",
+      "summary": "Australia and the EU sign sweeping trade and security deals after years of negotiations.",
+      "published": "2026-03-24T03:00:08+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/cly6g6l6lq7o#1",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 4,
+      "x": -0.002015709369788771,
+      "y": -0.0494598699769191
+    },
+    {
+      "title": "Jury orders Cosby to pay $19m to ex-waitress after finding he abused her in 1972",
+      "link": "https://www.bbc.com/news/articles/c1eq7v91n4xo?at_medium=RSS&at_campaign=rss",
+      "summary": "Donna Motsinger alleged Cosby gave her wine and a pill that left her incapacitated after picking her up in a limousine in 1972.",
+      "published": "2026-03-23T16:48:27+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c1eq7v91n4xo#1",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.04500927986934718,
+      "y": 0.11338594366968169
+    },
+    {
+      "title": "Referendum defeat leaves Italy's Meloni looking more vulnerable",
+      "link": "https://www.bbc.com/news/articles/crl1ne8dj1eo?at_medium=RSS&at_campaign=rss",
+      "summary": "Meloni vowed to press on after losing a vote on constitutional reform many turned into a referendum on her government.",
+      "published": "2026-03-23T14:55:32+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/crl1ne8dj1eo#1",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 2,
+      "x": 0.057674020585710556,
+      "y": -0.0043360868316113165
+    },
+    {
+      "title": "Slovenia becomes first EU country to introduce fuel rationing",
+      "link": "https://www.bbc.com/news/articles/c77m4zx6zvmo?at_medium=RSS&at_campaign=rss",
+      "summary": "Until further notice, motorists in Slovenia will be restricted to a maximum purchase of 50 litres of fuel per day.",
+      "published": "2026-03-23T12:15:25+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c77m4zx6zvmo#1",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.015124271905421042,
+      "y": -0.02053052624730112
+    },
+    {
+      "title": "US Senate confirms Markwayne Mullin as homeland security chief",
+      "link": "https://www.bbc.com/news/articles/c98kd9x705eo?at_medium=RSS&at_campaign=rss",
+      "summary": "The US senator will now oversee the embattled department after a series of immigration enforcement blunders.",
+      "published": "2026-03-23T20:31:21+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c98kd9x705eo#1",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": 0.020597368156495613,
+      "y": 0.050894394053229985
+    },
+    {
+      "title": "US bans new foreign-made consumer internet routers",
+      "link": "https://www.bbc.com/news/articles/c74787w149zo?at_medium=RSS&at_campaign=rss",
+      "summary": "There are almost no major brands of internet routers that are manufactured in the US.",
+      "published": "2026-03-23T19:56:53+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c74787w149zo#1",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.07903809364427183,
+      "y": -0.06552226742938945
+    },
+    {
+      "title": "Blast that injured two was 'terrorist attack', Ukrainian authorities say",
+      "link": "https://www.bbc.com/news/articles/crl1n0pn3e9o?at_medium=RSS&at_campaign=rss",
+      "summary": "The suspect is a 21-year-old local resident who claims he was blackmailed and forced to plant explosives.",
+      "published": "2026-03-23T09:53:29+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/crl1n0pn3e9o#1",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.08517219397042615,
+      "y": 0.11185376847259224
+    },
+    {
+      "title": "ICE agents deploy to major US airports as security queues stretch for hours",
+      "link": "https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campaign=rss",
+      "summary": "Hundreds of ICE agents have been deployed to 14 airports, in cities including New York, Atlanta and Houston.",
+      "published": "2026-03-23T15:52:18+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/cx298j7xg0yo#1",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": 0,
+      "x": 0.018870924982677693,
+      "y": 0.14440300356808536,
+      "ui_trend_num": 3
+    },
+    {
+      "title": "OnlyFans owner Leonid Radvinsky dies at 43",
+      "link": "https://www.bbc.com/news/articles/c33le6yv7pno?at_medium=RSS&at_campaign=rss",
+      "summary": "Leo Radvinsky became a billionaire after investing in the site, known for its pornographic content.",
+      "published": "2026-03-23T09:53:00+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c33le6yv7pno#1",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.09208004712709078,
+      "y": 0.09074662526706634
+    },
+    {
+      "title": "Kenyan ex-foreign minister arrested and accused of staging his disappearance",
+      "link": "https://www.bbc.com/news/articles/c3ex8vglvkxo?at_medium=RSS&at_campaign=rss",
+      "summary": "The reported disappearance of Raphael Tuju had led to claims he may have been abducted.",
+      "published": "2026-03-23T11:18:08+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c3ex8vglvkxo#1",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": 0.0470131748602047,
+      "y": 0.13674934984937767
+    },
+    {
+      "title": "Cuba's mothers-to-be prepare to give birth in a country plunged into darkness",
+      "link": "https://www.bbc.com/news/articles/cn53we5vll5o?at_medium=RSS&at_campaign=rss",
+      "summary": "Two pregnant women tell the BBC's Will Grant of their hopes and fears as their nation is mired in crisis.",
+      "published": "2026-03-24T00:28:19+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/cn53we5vll5o#2",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.019226467869403928,
+      "y": 0.09294204890103895
+    },
+    {
+      "title": "A committed pharmacist and a homesick blogger \u2013 the Iranian civilians killed in the war",
+      "link": "https://www.bbc.com/news/articles/c3v6ld7lv9no?at_medium=RSS&at_campaign=rss",
+      "summary": "The toll on civilians is mounting fast as the US-Israeli war on Iran continues.",
+      "published": "2026-03-23T13:01:26+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c3v6ld7lv9no#2",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": 0.20646308163061222,
+      "y": -0.08563673515241998
+    },
+    {
+      "title": "UK universities flock to India - but will they succeed?",
+      "link": "https://www.bbc.com/news/articles/c93w2pw3y0no?at_medium=RSS&at_campaign=rss",
+      "summary": "Nine UK universities are setting up campuses in India, but enrolment is expected to be modest initially.",
+      "published": "2026-03-23T18:40:24+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/c93w2pw3y0no#2",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.0698087443333719,
+      "y": -0.01706498540119777
+    },
+    {
+      "title": "US' and Iran's options for ending war narrow the longer it goes on",
+      "link": "https://www.bbc.com/news/articles/cn53zvlglg7o?at_medium=RSS&at_campaign=rss",
+      "summary": "Iran shows no sign of climbdown, while air power alone cannot achieve the US' main goal.",
+      "published": "2026-03-23T10:04:38+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/cn53zvlglg7o#2",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 4,
+        "credibility_score": 100
+      },
+      "cluster": 1,
+      "x": 0.24276443414513582,
+      "y": -0.16959301718942194,
+      "ui_trend_num": 1
+    },
+    {
+      "title": "Could Iranian missiles reach London and Paris?",
+      "link": "https://www.bbc.com/news/articles/cly73y5e788o?at_medium=RSS&at_campaign=rss",
+      "summary": "Some experts say Iran may be able to launch missiles to hit London, but they would likely be shot down long before arriving and the risk is low.",
+      "published": "2026-03-23T11:15:52+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/articles/cly73y5e788o#2",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": -1,
+      "x": 0.18865516420039452,
+      "y": -0.11941636858780884
+    },
+    {
+      "title": "How the deadly LaGuardia Airport crash unfolded",
+      "link": "https://www.bbc.com/news/videos/czxrv4pqx72o?at_medium=RSS&at_campaign=rss",
+      "summary": "Video shows the aftermath of the collision between a passenger plane and a firefighting vehicle on the runway of the New York airport.",
+      "published": "2026-03-23T16:47:26+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/videos/czxrv4pqx72o#3",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": 8,
+      "x": 0.03134408316312294,
+      "y": 0.32251429786811386,
+      "ui_trend_num": 2
+    },
+    {
+      "title": "Watch: Inside Palestinian homes attacked by settlers",
+      "link": "https://www.bbc.com/news/videos/cd9vnznv075o?at_medium=RSS&at_campaign=rss",
+      "summary": "Violence began after a teenage settler was killed, reportedly after being hit by a vehicle driven by a Palestinian.",
+      "published": "2026-03-23T12:23:17+00:00",
+      "source": "BBC News",
+      "id": "https://www.bbc.com/news/videos/cd9vnznv075o#3",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "bbc.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.13626367095914277,
+      "y": 0.04589914223979535
+    },
+    {
+      "title": "\u2018A miracle\u2019: Canadian flight attendant ejected from plane survives New York crash",
+      "link": "https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia",
+      "summary": "<p>Solange Tremblay was ejected over 100 metres from the plane after collision at LaGuardia airport, her daughter says</p><ul><li><p><a href=\"https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights\">Two pilots killed after Air Canada jet collision at LaGuardia in New York</a></p></li><li><p><a href=\"https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-us-email-to-get-newsletter-alerts-direct-to-your-inbox?utm_medium=ACQUISITIONS_STANDFIRST&amp;utm_campaign=BN22326&amp;utm_content=signup&amp;utm_term=standfirst&amp;utm_source=GUARDIAN_WEB\">Sign up for the Breaking News US newsletter email</a></p></li></ul><p>A flight attendant on the Air <a href=\"https://www.theguardian.com/world/canada\">Canada</a> Jazz flight that <a href=\"https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights\">collided</a> with a fire truck at <a href=\"https://www.theguardian.com/us-news/new-york\">New York</a>\u2019s LaGuardia airport on Sunday survived in what her daughter called a \u201ccomplete miracle\u201d, when she was ejected more than 100 metres from the plane while still strapped to her seat.</p><p>The CRJ-900 jet, operated by Jazz Aviation, collided with a fire truck as it landed, killing both the pilot and co-pilot. Nine people were sent to the hospital with injuries, including Solange Tremblay, a flight attendant.</p> <a href=\"https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia\">Continue reading...</a>",
+      "published": "2026-03-23T19:39:29+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": 8,
+      "x": 0.024390740886374718,
+      "y": 0.3526741999904643,
+      "ui_trend_num": 2
+    },
+    {
+      "title": "Eight arrested for \u2018brutal\u2019 attack on capybara in Brazil",
+      "link": "https://www.theguardian.com/world/2026/mar/24/brutal-attack-capybara-brazil-eight-arrested",
+      "summary": "<p>In incident filmed by security cameras in Rio de Janeiro, group of attackers beat animal with sticks and iron bars</p><p>Police in Rio de Janeiro have arrested eight people for brutally beating a capybara \u2013 the world\u2019s largest rodent.</p><p>Resembling a giant guinea pig, the light brown capybara (<em>Hydrochoerus hydrochaeris</em>) is often seen roaming the Brazilian city, particularly near streams and lagoons.</p> <a href=\"https://www.theguardian.com/world/2026/mar/24/brutal-attack-capybara-brazil-eight-arrested\">Continue reading...</a>",
+      "published": "2026-03-23T19:15:43+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/24/brutal-attack-capybara-brazil-eight-arrested",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.02213507746267949,
+      "y": 0.17582193984268996
+    },
+    {
+      "title": "At least 66 killed after Colombian military plane crashes in southern Amazon",
+      "link": "https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash",
+      "summary": "<p> Transport plane carrying soldiers and crew crashed shortly after takeoff from Puerto Legu\u00edzamo, deep in Colombia\u2019s southern Amazon region</p><p>A Colombian military transport plane with 121 people on board, mostly soldiers, crashed shortly after takeoff in the country\u2019s south, killing at least 66 people, authorities said.</p><p>The defence minister, Pedro S\u00e1nchez, said the accident happened as the Lockheed Martin Hercules C-130 plane was taking off from <a href=\"https://www.theguardian.com/world/2000/mar/10/martinhodgson\">Puerto Legu\u00edzamo</a>, deep in <a href=\"https://www.theguardian.com/world/colombia\">Colombia</a>\u2019s southern Amazon region, on the border with Peru, as it transported troops from the armed forces.</p> <a href=\"https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash\">Continue reading...</a>",
+      "published": "2026-03-23T19:11:17+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 3,
+        "credibility_score": 100
+      },
+      "cluster": 3,
+      "x": 0.10294372441714891,
+      "y": 0.3211825529215102,
+      "ui_trend_num": 4
+    },
+    {
+      "title": "Two pilots killed after Air Canada jet collision at LaGuardia in New York",
+      "link": "https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights",
+      "summary": "<p>NTSB says investigation under way as nine people remain hospitalized after plane hit fire tuck on runway</p><ul><li><p><a href=\"https://www.theguardian.com/us-news/live/2026/mar/23/new-york-laguardia-airport-plane-vehicle-crash-air-canada-updates\">US politics live \u2013 latest updates</a></p></li></ul><p>The pilot and co-pilot of an Air Canada Express regional jet have been killed after it collided with a fire truck while landing at <a href=\"https://www.theguardian.com/us-news/new-york\">New York</a>\u2019s LaGuardia airport, in an incident that closed the airport for several hours.</p><p>The Air Canada Express CRJ-900 plane, operated by Jazz Aviation, was carrying 72 passengers and four crew members from Montreal. Nine people remain hospitalized after the collision, which happened around 11.45pm ET on Sunday as the firefighting vehicle was responding to a separate incident.</p> <a href=\"https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights\">Continue reading...</a>",
+      "published": "2026-03-23T18:02:32+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/us-news/2026/mar/23/air-canada-plane-collides-with-ground-vehicle-at-new-yorks-laguardia-airport-halting-all-flights",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 2,
+        "credibility_score": 85
+      },
+      "cluster": 8,
+      "x": 0.04289287065642907,
+      "y": 0.3326818566855491,
+      "ui_trend_num": 2
+    },
+    {
+      "title": "Albanese urged to help Australians struggling with fuel crisis, as NZ offers first-of-its-kind cash relief",
+      "link": "https://www.theguardian.com/world/2026/mar/24/albanese-urged-to-help-australians-struggling-with-fuel-crisis-as-nz-offers-first-of-its-kind-cash-relief",
+      "summary": "<p>David Pocock says a flat 25% export levy on gas producers could redirect \u2018wartime profits\u2019 to struggling Australians</p><ul><li><p>Get our <a href=\"https://www.theguardian.com/email-newsletters?CMP=cvau_sfl\">breaking news email</a>, <a href=\"https://app.adjust.com/w4u7jx3\">free app</a> or <a href=\"https://www.theguardian.com/australia-news/series/full-story?CMP=cvau_sfl\">daily news podcast</a></p></li></ul><p>Pressure is mounting on the Albanese government to help households struggling with fuel prices, with working from home and free public transport posited as possible solutions.</p><p>Nearly 150,000 New Zealand families will <a href=\"https://www.theguardian.com/world/2026/mar/24/new-zealand-cash-payments-families-global-fuel-crisis\">soon receive a weekly cash payment to help them afford petrol</a>, believed to be the world\u2019s first fuel relief package that directly pays citizens since the Israel-US war on Iran began.</p> <a href=\"https://www.theguardian.com/world/2026/mar/24/albanese-urged-to-help-australians-struggling-with-fuel-crisis-as-nz-offers-first-of-its-kind-cash-relief\">Continue reading...</a>",
+      "published": "2026-03-24T02:58:06+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/24/albanese-urged-to-help-australians-struggling-with-fuel-crisis-as-nz-offers-first-of-its-kind-cash-relief",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.04235142357036074,
+      "y": -0.046582876922190965
+    },
+    {
+      "title": "Japan to begin biggest-ever oil release from national reserves as Middle East energy crisis bites",
+      "link": "https://www.theguardian.com/world/2026/mar/24/japan-oil-release-national-reserves",
+      "summary": "<p>PM Sanae Takaichi<strong> </strong>says about 80m barrels of stockpiled oil to be provided to refiners \u2013 equivalent to 45 days of domestic demand </p><p><strong>\u2022 </strong><a href=\"https://www.theguardian.com/world/live/2026/mar/24/iran-war-live-updates-trump-ursula-von-der-leyen-oil-prices-energy-crisis-israel-strikes\"><strong>Middle East crisis \u2013 live updates</strong></a></p><p><a href=\"https://www.theguardian.com/world/japan\">Japan</a> will begin the biggest-ever release of oil from its strategic reserves this week, the prime minister, <a href=\"https://www.theguardian.com/world/sanae-takaichi\">Sanae Takaichi</a>, has said, as the country braces for possible shortages caused by the <a href=\"https://www.theguardian.com/world/us-israel-war-on-iran\">US-Israel war on Iran</a>.</p><p>The government last week approved the release of 15 days\u2019 worth of private-sector reserves, amid concern that the conflict in the Middle East will continue to hinder the flow of tanker traffic along the strait of Hormuz.</p> <a href=\"https://www.theguardian.com/world/2026/mar/24/japan-oil-release-national-reserves\">Continue reading...</a>",
+      "published": "2026-03-23T23:06:06+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/24/japan-oil-release-national-reserves",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": 6,
+      "x": 0.06672943663289183,
+      "y": -0.09744787520208066
+    },
+    {
+      "title": "New Zealand to give cash payments to some low income families as global fuel crisis worsens",
+      "link": "https://www.theguardian.com/world/2026/mar/24/new-zealand-cash-payments-families-global-fuel-crisis",
+      "summary": "<p>Policy begins on 1 April and is aimed to ease financial pressure as the price of fuel surges due to conflict in the Middle East</p><p>Nearly 150,000 New Zealand families will soon receive a weekly cash payment to help them afford petrol, the government has announced, in what is believed to be the world\u2019s first fuel relief package that directly pays citizens since the Iran war began.</p><p>On Tuesday, prime minister Christopher Luxon and finance minister Nicola Willis announced roughly 143,000 families with children will get an extra NZ$50 ($29.20; \u00a321.80) a week through a boost to the in-work tax credit \u2013 a payment to families with dependent children where at least one parent is in paid employment and neither parent receives benefits. Another 14,000 families on slightly higher incomes will also be eligible for payments, but will receive less than $50 per week.</p> <a href=\"https://www.theguardian.com/world/2026/mar/24/new-zealand-cash-payments-families-global-fuel-crisis\">Continue reading...</a>",
+      "published": "2026-03-23T22:03:44+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/24/new-zealand-cash-payments-families-global-fuel-crisis",
+      "verification_status": "verified",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 1,
+        "credibility_score": 70
+      },
+      "cluster": -1,
+      "x": -0.02213235203386388,
+      "y": -0.019026212615527022
+    },
+    {
+      "title": "Hong Kong police can demand phone and computer passwords under amended national security law",
+      "link": "https://www.theguardian.com/world/2026/mar/24/hong-kong-phone-passwords-national-security-law",
+      "summary": "<p>Refusing to comply could lead to year in jail and hefty fine, while providing false information carries up to three years in prison</p><p>Hong Kong police can now demand that people suspected of breaching the city\u2019s national security law provide mobile phone or computer passwords in a further crackdown on dissent.</p><p>The amendments to the law also empower customs officers to seize items that are deemed to have \u201cseditious intention\u201d, regardless of whether any person has been arrested for an offence endangering national security because of the items.</p> <a href=\"https://www.theguardian.com/world/2026/mar/24/hong-kong-phone-passwords-national-security-law\">Continue reading...</a>",
+      "published": "2026-03-23T21:23:50+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/24/hong-kong-phone-passwords-national-security-law",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": -0.05284908756388506,
+      "y": 0.03451341443152931
+    },
+    {
+      "title": "Tonga PM welcomes US deal to explore deep-sea minerals amid environmental concerns",
+      "link": "https://www.theguardian.com/world/2026/mar/24/tonga-us-deal-deep-sea-minerals-environmental-concern",
+      "summary": "<p>Exclusive:<strong> </strong>Pacific island\u2019s new leader Lord Fakaf\u0101nua discusses \u2018exciting\u2019 US partnership as critics fear impacts of seabed exploration</p><p>The recently elected leader of Tonga has described a deal to partner with the US on deep-sea mineral exploration as an \u201cexciting development\u201d amid concern in the small Pacific nation over the practice of seabed mining and the potential environmental impact.</p><p>Tonga is located in the South Pacific Ocean, a region attracting growing interest over whether <a href=\"https://www.theguardian.com/environment/rare-earths\">critical minerals</a> buried in the seabed could be extracted to help power industries and green technologies.</p> <a href=\"https://www.theguardian.com/world/2026/mar/24/tonga-us-deal-deep-sea-minerals-environmental-concern\">Continue reading...</a>",
+      "published": "2026-03-23T20:02:02+00:00",
+      "source": "World news | The Guardian",
+      "id": "https://www.theguardian.com/world/2026/mar/24/tonga-us-deal-deep-sea-minerals-environmental-concern",
+      "verification_status": "uncertain",
+      "verification_detail": {
+        "domain": "theguardian.com",
+        "similar_articles": 0,
+        "credibility_score": 50
+      },
+      "cluster": -1,
+      "x": 0.002164863199695446,
+      "y": -0.027029871987224386
+    }
+  ]
+}

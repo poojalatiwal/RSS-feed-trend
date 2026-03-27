@@ -1,0 +1,573 @@
+2026-03-24 14:33:53,133 - src.trend_detector - WARNING - GEMINI_API_KEY not found. Embeddings will fail.
+2026-03-24 14:33:53,133 - src.synthesis_agent - WARNING - GEMINI_API_KEY not found. Synthesis will fail.
+2026-03-24 14:33:53,133 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 14:33:53,134 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 14:34:00,676 - src.rss_poller - WARNING - Error parsing feed https://www.theverge.com/rss/index.xml: <urlopen error [Errno 54] Connection reset by peer>
+2026-03-24 14:34:10,384 - src.rss_poller - INFO - Collected 123 articles from the last 24.0 hours.
+2026-03-24 14:34:10,385 - Orchestrator - INFO - Analyzing 90 articles for trends...
+2026-03-24 14:34:22,503 - src.trend_detector - ERROR - Error generating embeddings: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2026-03-24 14:42:40,562 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 14:42:40,562 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 14:42:57,561 - src.rss_poller - WARNING - Error parsing feed https://www.theverge.com/rss/index.xml: <urlopen error [Errno 54] Connection reset by peer>
+2026-03-24 14:43:05,630 - src.rss_poller - INFO - Collected 123 articles from the last 24.0 hours.
+2026-03-24 14:43:05,630 - Orchestrator - INFO - Analyzing 90 articles for trends...
+2026-03-24 14:43:09,450 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump...
+2026-03-24 14:43:09,756 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump: Status 403
+2026-03-24 14:43:09,756 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html...
+2026-03-24 14:43:09,868 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html: Status 403
+2026-03-24 14:43:09,868 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html...
+2026-03-24 14:43:09,998 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html: Status 403
+2026-03-24 14:43:09,998 - Orchestrator - INFO - Synthesizing briefing for trend 1 (Trending Narrative)...
+2026-03-24 14:43:09,998 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/c78rdze8zvjo?at_medium=RSS&at_campaign=rss...
+2026-03-24 14:43:10,495 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/videos/czxrv4pqx72o?at_medium=RSS&at_campaign=rss...
+2026-03-24 14:43:10,755 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/videos/clyer72wn85o?at_medium=RSS&at_campaign=rss...
+2026-03-24 14:43:10,984 - Orchestrator - INFO - Synthesizing briefing for trend 2 (Trending Narrative)...
+2026-03-24 14:43:28,643 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-is-paying-the-salaries-of-this-towns-entire-police-force/...
+2026-03-24 14:43:28,975 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-invades-airports-across-the-us/...
+2026-03-24 14:43:29,228 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campaign=rss...
+2026-03-24 14:43:29,637 - Orchestrator - INFO - Synthesizing briefing for trend 3 (Emerging Topic)...
+2026-03-24 14:43:49,154 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html...
+2026-03-24 14:43:49,235 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html: Status 403
+2026-03-24 14:43:49,236 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/c8dlmrjn1l2o?at_medium=RSS&at_campaign=rss...
+2026-03-24 14:43:49,481 - src.scraper_agent - INFO - Scraping https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash...
+2026-03-24 14:43:52,895 - Orchestrator - INFO - Synthesizing briefing for trend 4 (Emerging Topic)...
+2026-03-24 14:44:05,580 - Orchestrator - INFO - Briefing generated and saved.
+2026-03-24 14:51:31,851 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 14:51:31,851 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 14:51:32,656 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:32,657 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 14:51:32,725 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:33,045 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:33,127 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:33,432 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:33,515 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:33,850 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:33,938 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 14:51:34,245 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:34,322 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:34,650 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:34,733 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:35,043 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 14:51:35,340 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:35,412 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:35,867 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:35,945 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:36,263 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:36,357 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:36,679 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 14:51:36,989 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 14:51:37,354 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 14:51:37,436 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 14:51:37,758 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 14:51:38,125 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 14:51:38,126 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 14:51:44,935 - src.rss_poller - WARNING - Error parsing feed https://www.theverge.com/rss/index.xml: <urlopen error [Errno 54] Connection reset by peer>
+2026-03-24 14:51:51,284 - src.rss_poller - INFO - Collected 123 articles from the last 24.0 hours.
+2026-03-24 14:51:51,284 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 14:51:51,284 - Orchestrator - INFO - Running verification agent...
+2026-03-24 14:52:33,333 - Orchestrator - INFO - 0 articles passed verification
+2026-03-24 14:52:33,334 - Orchestrator - WARNING - No verified articles.
+2026-03-24 15:05:01,249 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:05:01,249 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:05:01,712 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:01,747 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:02,038 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:02,080 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:02,409 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:02,410 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 15:05:02,486 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:02,776 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:02,838 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:05:03,101 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:03,153 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:03,428 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:03,464 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:03,751 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:05:04,030 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:04,092 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:04,578 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:04,665 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:04,931 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:04,956 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:05,235 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:05:05,477 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:05:05,818 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:05:05,853 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:05:06,137 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:05:06,516 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 15:05:06,517 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 15:05:13,205 - src.rss_poller - WARNING - Error parsing feed https://www.theverge.com/rss/index.xml: <urlopen error [Errno 54] Connection reset by peer>
+2026-03-24 15:05:18,043 - src.rss_poller - INFO - Collected 123 articles from the last 24.0 hours.
+2026-03-24 15:05:18,044 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 15:05:18,044 - Orchestrator - INFO - Running verification agent...
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,044 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,045 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,046 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() missing 1 required positional argument: 'all_articles'
+2026-03-24 15:05:18,047 - Orchestrator - INFO - 0 articles passed verification
+2026-03-24 15:05:18,047 - Orchestrator - WARNING - No verified articles.
+2026-03-24 15:07:37,085 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:07:37,085 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:07:37,426 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:37,444 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:37,719 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:37,738 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:37,991 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:38,012 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:38,289 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:38,342 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:07:38,610 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:38,611 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 15:07:38,628 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:38,883 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:38,901 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:39,171 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:07:39,420 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:39,438 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:39,789 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:39,804 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:40,053 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:40,072 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:40,344 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:07:40,615 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:07:40,902 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:07:40,920 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:07:41,171 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:07:41,624 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 15:07:41,631 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 15:08:08,730 - src.rss_poller - INFO - Collected 133 articles from the last 24.0 hours.
+2026-03-24 15:08:08,731 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 15:08:08,731 - Orchestrator - INFO - Running verification agent...
+2026-03-24 15:08:09,486 - Orchestrator - INFO - 90 articles passed verification
+2026-03-24 15:08:09,486 - Orchestrator - INFO - Running classification agent...
+2026-03-24 15:08:11,122 - Orchestrator - INFO - Detecting trends...
+2026-03-24 15:08:14,955 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump...
+2026-03-24 15:08:15,064 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump: Status 403
+2026-03-24 15:08:15,064 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html...
+2026-03-24 15:08:15,159 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html: Status 403
+2026-03-24 15:08:15,159 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html...
+2026-03-24 15:08:15,242 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html: Status 403
+2026-03-24 15:08:15,244 - Orchestrator - INFO - Synthesizing briefing for trend 1
+2026-03-24 15:08:15,244 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-is-paying-the-salaries-of-this-towns-entire-police-force/...
+2026-03-24 15:08:15,515 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-invades-airports-across-the-us/...
+2026-03-24 15:08:15,800 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:08:16,036 - Orchestrator - INFO - Synthesizing briefing for trend 2
+2026-03-24 15:08:31,596 - src.scraper_agent - INFO - Scraping https://arstechnica.com/gadgets/2026/03/apple-will-talk-ios-27-macos-27-and-more-at-wwdc-2026-on-june-8/...
+2026-03-24 15:08:33,766 - src.scraper_agent - INFO - Scraping https://www.theverge.com/news/898997/apple-wwdc-2026-june-8-ios-27-ai-siri...
+2026-03-24 15:08:34,153 - Orchestrator - INFO - Synthesizing briefing for trend 3
+2026-03-24 15:08:46,213 - src.scraper_agent - INFO - Scraping https://www.theverge.com/news/899172/fcc-foreign-router-ban...
+2026-03-24 15:08:46,463 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/c74787w149zo?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:08:46,734 - Orchestrator - INFO - Synthesizing briefing for trend 4
+2026-03-24 15:09:01,128 - Orchestrator - INFO - Briefing generated and saved.
+2026-03-24 15:11:26,433 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:11:26,434 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:11:26,754 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:26,754 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 15:11:26,771 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:27,010 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:27,026 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:27,260 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:27,274 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:27,522 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:27,536 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:11:27,767 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:27,782 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:28,036 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:28,057 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:28,316 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:11:28,553 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:28,569 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:28,912 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:28,926 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:29,185 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:29,238 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:29,479 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:11:29,733 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:11:30,024 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:11:30,039 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:11:30,313 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:11:30,826 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 15:11:30,835 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 15:11:41,873 - src.rss_poller - INFO - Collected 133 articles from the last 24.0 hours.
+2026-03-24 15:11:41,874 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 15:11:41,874 - Orchestrator - INFO - Running verification agent...
+2026-03-24 15:11:42,629 - Orchestrator - INFO - 90 articles passed verification
+2026-03-24 15:11:42,629 - Orchestrator - INFO - Running classification agent...
+2026-03-24 15:11:43,212 - Orchestrator - INFO - Detecting trends...
+2026-03-24 15:11:46,762 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump...
+2026-03-24 15:11:46,856 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump: Status 403
+2026-03-24 15:11:46,856 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html...
+2026-03-24 15:11:46,983 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html: Status 403
+2026-03-24 15:11:46,983 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html...
+2026-03-24 15:11:47,108 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html: Status 403
+2026-03-24 15:11:47,109 - Orchestrator - INFO - Synthesizing briefing for trend 1
+2026-03-24 15:11:47,110 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-is-paying-the-salaries-of-this-towns-entire-police-force/...
+2026-03-24 15:11:47,402 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-invades-airports-across-the-us/...
+2026-03-24 15:11:47,719 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:11:48,092 - Orchestrator - INFO - Synthesizing briefing for trend 2
+2026-03-24 15:12:11,136 - src.scraper_agent - INFO - Scraping https://arstechnica.com/gadgets/2026/03/apple-will-talk-ios-27-macos-27-and-more-at-wwdc-2026-on-june-8/...
+2026-03-24 15:12:14,494 - src.scraper_agent - INFO - Scraping https://www.theverge.com/news/898997/apple-wwdc-2026-june-8-ios-27-ai-siri...
+2026-03-24 15:12:14,855 - Orchestrator - INFO - Synthesizing briefing for trend 3
+2026-03-24 15:12:29,966 - src.scraper_agent - INFO - Scraping https://www.theverge.com/news/899172/fcc-foreign-router-ban...
+2026-03-24 15:12:40,179 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/c74787w149zo?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:12:40,387 - Orchestrator - INFO - Synthesizing briefing for trend 4
+2026-03-24 15:12:57,541 - Orchestrator - INFO - Briefing generated and saved.
+2026-03-24 15:15:39,535 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:15:39,536 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:15:39,973 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:39,989 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:40,223 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:40,225 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 15:15:40,246 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:40,498 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:40,515 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:40,747 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:40,766 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:15:41,003 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:41,022 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:41,275 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:41,297 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:41,539 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:15:41,789 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:41,807 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:42,138 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:42,152 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:42,401 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:42,416 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:42,652 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:15:42,906 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:15:43,206 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:15:43,226 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:15:43,464 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:15:43,849 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 15:15:43,851 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 15:15:49,899 - src.rss_poller - WARNING - Error parsing feed https://www.theverge.com/rss/index.xml: <urlopen error [Errno 54] Connection reset by peer>
+2026-03-24 15:15:56,804 - src.rss_poller - INFO - Collected 123 articles from the last 24.0 hours.
+2026-03-24 15:15:56,804 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 15:15:56,804 - Orchestrator - INFO - Running verification agent...
+2026-03-24 15:15:57,608 - Orchestrator - INFO - 90 articles passed verification
+2026-03-24 15:15:57,608 - Orchestrator - INFO - Running classification agent...
+2026-03-24 15:15:58,434 - Orchestrator - INFO - Detecting trends...
+2026-03-24 15:16:01,922 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump...
+2026-03-24 15:16:02,000 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump: Status 403
+2026-03-24 15:16:02,001 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html...
+2026-03-24 15:16:02,064 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/us/politics/trump-iran-gas-oil-strait.html: Status 403
+2026-03-24 15:16:02,064 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html...
+2026-03-24 15:16:02,137 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/world/middleeast/middle-east-war-iran-march-23.html: Status 403
+2026-03-24 15:16:02,138 - Orchestrator - INFO - Synthesizing briefing for trend 1
+2026-03-24 15:16:02,138 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/c78rdze8zvjo?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:16:02,430 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/videos/czxrv4pqx72o?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:16:02,669 - src.scraper_agent - INFO - Scraping https://www.theguardian.com/us-news/2026/mar/23/canadian-flight-attendant-survives-new-york-plane-crash-laguardia...
+2026-03-24 15:16:02,933 - Orchestrator - INFO - Synthesizing briefing for trend 2
+2026-03-24 15:16:18,451 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-is-paying-the-salaries-of-this-towns-entire-police-force/...
+2026-03-24 15:16:18,716 - src.scraper_agent - INFO - Scraping https://www.wired.com/story/ice-invades-airports-across-the-us/...
+2026-03-24 15:16:18,968 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:16:19,203 - Orchestrator - INFO - Synthesizing briefing for trend 3
+2026-03-24 15:16:38,811 - src.scraper_agent - INFO - Scraping https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html...
+2026-03-24 15:16:38,906 - src.scraper_agent - WARNING - Failed to fetch https://www.nytimes.com/2026/03/23/world/americas/colombian-military-crash.html: Status 403
+2026-03-24 15:16:38,906 - src.scraper_agent - INFO - Scraping https://www.bbc.com/news/articles/c8dlmrjn1l2o?at_medium=RSS&at_campaign=rss...
+2026-03-24 15:16:39,135 - src.scraper_agent - INFO - Scraping https://www.theguardian.com/world/2026/mar/23/colombia-military-plane-crash...
+2026-03-24 15:16:39,473 - Orchestrator - INFO - Synthesizing briefing for trend 4
+2026-03-24 15:16:52,352 - Orchestrator - INFO - Briefing generated and saved.
+2026-03-24 15:19:46,035 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:19:46,036 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:19:46,684 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:46,761 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:47,290 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:47,366 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:47,692 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:47,772 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:48,091 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:48,175 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:19:48,474 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:48,556 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:48,891 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:48,965 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:49,272 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:19:49,580 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:49,667 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:50,119 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:50,120 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 15:19:50,194 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:50,503 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:50,583 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:50,895 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:19:51,225 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:19:51,604 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:51,693 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:51,996 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:19:52,445 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:19:52,445 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:19:52,767 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:52,853 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:53,167 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:53,256 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:53,588 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:53,672 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:53,969 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:54,054 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:19:54,372 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:54,451 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:54,765 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:54,843 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:55,156 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:19:55,475 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:55,562 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:56,434 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:56,516 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:56,821 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:56,911 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:57,203 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:19:57,542 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:19:57,920 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:19:58,004 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:19:58,343 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:19:58,484 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 15:19:58,485 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 15:20:09,206 - src.rss_poller - INFO - Collected 133 articles from the last 24.0 hours.
+2026-03-24 15:20:09,206 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 15:20:09,206 - Orchestrator - INFO - Running verification agent...
+2026-03-24 15:22:29,782 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:22:29,782 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:22:30,296 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:30,377 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:30,676 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:30,759 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:31,061 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:31,063 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-24 15:22:31,148 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:31,445 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:31,521 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:22:31,828 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:31,902 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:32,211 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:32,296 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:32,618 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:22:32,916 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:33,008 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:33,424 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:33,498 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:33,838 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:33,919 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:34,246 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:22:34,551 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:22:34,935 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:35,013 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:35,327 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:22:35,735 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:22:35,735 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:22:36,046 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:36,121 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:36,437 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:36,511 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:36,821 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:36,893 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:37,221 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:37,309 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-24 15:22:37,602 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:37,686 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:38,013 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:38,094 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:38,408 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-24 15:22:38,720 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:38,801 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:39,155 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:39,226 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:39,536 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:39,607 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:39,912 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-24 15:22:40,215 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-24 15:22:40,585 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-24 15:22:40,668 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-24 15:22:40,985 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-24 15:22:41,134 - Orchestrator - INFO - Starting pipeline run...
+2026-03-24 15:22:41,134 - src.rss_poller - INFO - Fetching 11 feeds...
+2026-03-24 15:22:49,040 - src.rss_poller - INFO - Collected 132 articles from the last 24.0 hours.
+2026-03-24 15:22:49,040 - Orchestrator - INFO - Fetched 90 articles
+2026-03-24 15:22:49,040 - Orchestrator - INFO - Running verification agent...
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,040 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,041 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,042 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,043 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,043 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,043 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,043 - Orchestrator - WARNING - Verification failed: VerificationAgent.verify() takes 2 positional arguments but 3 were given
+2026-03-24 15:22:49,043 - Orchestrator - INFO - 0 articles passed verification
+2026-03-24 15:22:49,043 - Orchestrator - WARNING - No verified articles.
+2026-03-24 15:33:31,278 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-24 15:33:31,278 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-24 15:33:31,295 - huggingface_hub.utils._http - WARNING - '[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-03-24 15:33:31,295 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
