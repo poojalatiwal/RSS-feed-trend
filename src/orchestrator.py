@@ -1,26 +1,19 @@
 import json
 import logging
-import os
 from typing import TypedDict, List, Dict
 from datetime import datetime
 
-# -----------------------------
 # LangGraph + LangSmith
-# -----------------------------
 from langgraph.graph import StateGraph, END
 from langsmith import traceable
 
-# -----------------------------
-# Ray (parallel processing)
-# -----------------------------
+# Ray
 import ray
 
 if not ray.is_initialized():
     ray.init(ignore_reinit_error=True)
 
-# -----------------------------
-# Import your agents
-# -----------------------------
+# Agents
 from src.rss_poller import RSSPoller
 from src.trend_detector import TrendDetector
 from src.scraper_agent import ScraperAgent
@@ -28,17 +21,13 @@ from src.synthesis_agent import SynthesisAgent
 from src.verification_agent import VerificationAgent
 from src.classification_agent import ClassificationAgent
 
-# -----------------------------
 # Logging
-# -----------------------------
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("LangGraph-Orchestrator")
 
 DATA_FILE = "briefing_data.json"
 
-# -----------------------------
 # STATE
-# -----------------------------
 class AgentState(TypedDict):
     feeds: List[str]
     articles: List[Dict]
@@ -49,9 +38,7 @@ class AgentState(TypedDict):
     trends_output: List[Dict]
 
 
-# -----------------------------
 # INIT AGENTS
-# -----------------------------
 poller = RSSPoller()
 verifier = VerificationAgent()
 classifier = ClassificationAgent()
@@ -60,9 +47,7 @@ scraper = ScraperAgent()
 synthesizer = SynthesisAgent()
 
 
-# -----------------------------
-# RAY PARALLEL TASKS
-# -----------------------------
+# RAY TASK
 @ray.remote
 def verify_article(article):
     try:
@@ -71,15 +56,11 @@ def verify_article(article):
         return {"verification_status": "error", "error": str(e)}
 
 
-# -----------------------------
 # NODES
-# -----------------------------
-
 @traceable(name="RSS Fetch")
 def rss_node(state: AgentState):
     articles = poller.fetch_feeds(state["feeds"], time_window_hours=24.0)
-    articles = articles[:90] if articles else []
-    return {"articles": articles}
+    return {"articles": articles[:90] if articles else []}
 
 
 @traceable(name="Verification")
@@ -87,7 +68,7 @@ def verification_node(state: AgentState):
     if not state["articles"]:
         return {"verified_articles": []}
 
-    tasks = [verify_article.remote(article) for article in state["articles"]]
+    tasks = [verify_article.remote(a) for a in state["articles"]]
     results = ray.get(tasks)
 
     verified = [
@@ -101,12 +82,10 @@ def verification_node(state: AgentState):
 @traceable(name="Classification")
 def classification_node(state: AgentState):
     try:
-        classified = classifier.classify(state["verified_articles"])
+        return {"classified_articles": classifier.classify(state["verified_articles"])}
     except Exception as e:
         logger.error(f"Classification error: {e}")
-        classified = state["verified_articles"]
-
-    return {"classified_articles": classified}
+        return {"classified_articles": state["verified_articles"]}
 
 
 @traceable(name="Clustering")
@@ -116,24 +95,24 @@ def clustering_node(state: AgentState):
 
         if isinstance(res, dict):
             clusters = res.get("clusters", [])
-            all_articles = res.get("articles_with_coords", state["classified_articles"])
+            articles = res.get("articles_with_coords", state["classified_articles"])
         else:
             clusters = res
-            all_articles = state["classified_articles"]
+            articles = state["classified_articles"]
 
     except Exception as e:
         logger.error(f"Clustering error: {e}")
         clusters = []
-        all_articles = state["classified_articles"]
+        articles = state["classified_articles"]
 
     clusters = sorted(clusters, key=len, reverse=True)
     clusters = [c for c in clusters if len(c) >= 2][:4]
 
     if not clusters:
-        fallback = state["classified_articles"][:5]
+        fallback = articles[:5]
         clusters = [fallback] if fallback else []
 
-    return {"clusters": clusters, "articles": all_articles}
+    return {"clusters": clusters, "articles": articles}
 
 
 @traceable(name="Scraping")
@@ -141,22 +120,21 @@ def scraping_node(state: AgentState):
     all_scraped = []
 
     for cluster in state["clusters"]:
-        urls = []
-        seen = set()
-
-        for article in cluster:
-            link = article.get("link")
-            if link and link not in seen:
-                urls.append(link)
-                seen.add(link)
-
-        urls = urls[:3]
+        urls = list({
+            art.get("link")
+            for art in cluster
+            if art.get("link")
+        })[:3]
 
         if not urls:
             continue
 
         scraped = scraper.scrape_urls(urls)
-        all_scraped.append(scraped)
+        
+        scraped = {k: v for k, v in scraped.items() if v}
+
+        if scraped:
+            all_scraped.append(scraped)
 
     return {"scraped_data": all_scraped}
 
@@ -166,6 +144,9 @@ def synthesis_node(state: AgentState):
     trends = []
 
     for i, scraped in enumerate(state["scraped_data"]):
+        if not scraped:
+            continue
+
         try:
             briefing = synthesizer.synthesize_briefing(scraped)
         except Exception as e:
@@ -178,10 +159,7 @@ def synthesis_node(state: AgentState):
 
     return {"trends_output": trends}
 
-
-# -----------------------------
-# BUILD GRAPH
-# -----------------------------
+# GRAPH
 builder = StateGraph(AgentState)
 
 builder.add_node("rss", rss_node)
@@ -203,14 +181,12 @@ builder.add_edge("synthesize", END)
 graph = builder.compile()
 
 
-# -----------------------------
-# ORCHESTRATOR CLASS (🔥 FIX)
-# -----------------------------
+# ORCHESTRATOR
 class Orchestrator:
     def __init__(self):
         self.graph = graph
 
-    def run_pipeline(self):
+    def run_pipeline(self, debug=False):
         try:
             with open("feeds.json") as f:
                 feeds = json.load(f)
@@ -225,38 +201,36 @@ class Orchestrator:
                 "trends_output": []
             })
 
+            articles = result.get("articles", [])
             trends = result.get("trends_output", [])
-            all_articles = result.get("articles", [])
 
-            formatted_trends = []
+            if debug:
+                logger.info(f"DEBUG: Articles={len(articles)}, Trends={len(trends)}")
 
-            for t in trends:
-                formatted_trends.append({
+            formatted_trends = [
+                {
                     "trend_id": t.get("trend_id"),
                     "briefing": t.get("briefing"),
-                    "trend_size": len(all_articles),
-                    "sources": all_articles[:5]
-                })
+                    "trend_size": len(articles),
+                    "sources": articles[:5]
+                }
+                for t in trends
+            ]
 
             output = {
                 "timestamp": datetime.utcnow().isoformat(),
                 "trends": formatted_trends,
-                "all_articles": all_articles
+                "all_articles": articles
             }
 
             with open(DATA_FILE, "w") as f:
                 json.dump(output, f, indent=2)
 
-            logger.info("✅ Pipeline completed and data saved")
+            logger.info("Pipeline completed successfully")
 
         except Exception as e:
-            logger.error(f"❌ Pipeline failed: {e}")
+            logger.error(f"Pipeline failed: {e}")
             raise
 
-
-# -----------------------------
-# DIRECT RUN (optional)
-# -----------------------------
 if __name__ == "__main__":
-    orchestrator = Orchestrator()
-    orchestrator.run_pipeline()
+    Orchestrator().run_pipeline(debug=True)

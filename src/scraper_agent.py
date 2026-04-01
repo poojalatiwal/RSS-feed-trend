@@ -5,18 +5,22 @@ import ray
 
 logger = logging.getLogger(__name__)
 
-# Initialize Ray (safe init)
-if not ray.is_initialized():
-    ray.init(ignore_reinit_error=True)
 
-
-#  PARALLEL SCRAPER TASK
+# PARALLEL SCRAPER TASK
 @ray.remote
 def scrape_single_url(url, headers):
     try:
-        response = requests.get(url, headers=headers, timeout=10)
+        response = None
 
-        if response.status_code != 200:
+        for _ in range(2):
+            try:
+                response = requests.get(url, headers=headers, timeout=10)
+                if response.status_code == 200:
+                    break
+            except Exception:
+                continue
+
+        if not response or response.status_code != 200:
             return {url: ""}
 
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -30,6 +34,7 @@ def scrape_single_url(url, headers):
         # Clean text
         lines = [line.strip() for line in text.splitlines()]
         chunks = []
+
         for line in lines:
             for phrase in line.split("  "):
                 phrase = phrase.strip()
@@ -38,16 +43,16 @@ def scrape_single_url(url, headers):
 
         cleaned_text = "\n".join(chunks)
 
+        if len(cleaned_text) < 200:
+            return {url: ""}
+
         return {url: cleaned_text[:10000]}
 
     except Exception as e:
         logger.error(f"Error scraping {url}: {e}")
         return {url: ""}
 
-
-# -----------------------------
-# 🔹 MAIN AGENT
-# -----------------------------
+#  MAIN AGENT
 class ScraperAgent:
     def __init__(self):
         self.headers = {
@@ -64,13 +69,10 @@ class ScraperAgent:
 
         logger.info(f"Scraping {len(urls)} URLs in parallel...")
 
-        # Create parallel tasks
         tasks = [scrape_single_url.remote(url, self.headers) for url in urls]
 
-        # Collect results
         results_list = ray.get(tasks)
 
-        # Merge results into single dict
         results = {}
         for item in results_list:
             results.update(item)
@@ -78,11 +80,12 @@ class ScraperAgent:
         return results
 
 
-# -----------------------------
-# 🔹 TEST
-# -----------------------------
+# TEST
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
+
+    if not ray.is_initialized():
+        ray.init(ignore_reinit_error=True)
 
     scraper = ScraperAgent()
 
