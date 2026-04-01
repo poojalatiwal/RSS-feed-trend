@@ -10,3 +10,6 @@ lxml
 hdbscan
 sentence-transformers 
 scikit-learn
+langgraph 
+langchain
+ray

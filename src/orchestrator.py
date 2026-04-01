@@ -1,13 +1,26 @@
-import time
 import json
 import logging
-import sys
 import os
+from typing import TypedDict, List, Dict
 from datetime import datetime
 
-# Ensure root path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# -----------------------------
+# LangGraph + LangSmith
+# -----------------------------
+from langgraph.graph import StateGraph, END
+from langsmith import traceable
 
+# -----------------------------
+# Ray (parallel processing)
+# -----------------------------
+import ray
+
+if not ray.is_initialized():
+    ray.init(ignore_reinit_error=True)
+
+# -----------------------------
+# Import your agents
+# -----------------------------
 from src.rss_poller import RSSPoller
 from src.trend_detector import TrendDetector
 from src.scraper_agent import ScraperAgent
@@ -15,203 +28,235 @@ from src.synthesis_agent import SynthesisAgent
 from src.verification_agent import VerificationAgent
 from src.classification_agent import ClassificationAgent
 
-
+# -----------------------------
 # Logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("agent.log"),
-        logging.StreamHandler()
-    ]
-)
-
-logger = logging.getLogger("Orchestrator")
+# -----------------------------
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("LangGraph-Orchestrator")
 
 DATA_FILE = "briefing_data.json"
 
+# -----------------------------
+# STATE
+# -----------------------------
+class AgentState(TypedDict):
+    feeds: List[str]
+    articles: List[Dict]
+    verified_articles: List[Dict]
+    classified_articles: List[Dict]
+    clusters: List[List[Dict]]
+    scraped_data: List[Dict]
+    trends_output: List[Dict]
 
-class Orchestrator:
 
-    def __init__(self):
-        self.poller = RSSPoller()
-        self.verifier = VerificationAgent()
-        self.classifier = ClassificationAgent()
-        self.detector = TrendDetector()
-        self.scraper = ScraperAgent()
-        self.synthesizer = SynthesisAgent()
+# -----------------------------
+# INIT AGENTS
+# -----------------------------
+poller = RSSPoller()
+verifier = VerificationAgent()
+classifier = ClassificationAgent()
+detector = TrendDetector()
+scraper = ScraperAgent()
+synthesizer = SynthesisAgent()
 
 
-    def load_feeds(self):
+# -----------------------------
+# RAY PARALLEL TASKS
+# -----------------------------
+@ray.remote
+def verify_article(article):
+    try:
+        return verifier.verify(article)
+    except Exception as e:
+        return {"verification_status": "error", "error": str(e)}
+
+
+# -----------------------------
+# NODES
+# -----------------------------
+
+@traceable(name="RSS Fetch")
+def rss_node(state: AgentState):
+    articles = poller.fetch_feeds(state["feeds"], time_window_hours=24.0)
+    articles = articles[:90] if articles else []
+    return {"articles": articles}
+
+
+@traceable(name="Verification")
+def verification_node(state: AgentState):
+    if not state["articles"]:
+        return {"verified_articles": []}
+
+    tasks = [verify_article.remote(article) for article in state["articles"]]
+    results = ray.get(tasks)
+
+    verified = [
+        r for r in results
+        if r and r.get("verification_status") != "suspicious"
+    ]
+
+    return {"verified_articles": verified}
+
+
+@traceable(name="Classification")
+def classification_node(state: AgentState):
+    try:
+        classified = classifier.classify(state["verified_articles"])
+    except Exception as e:
+        logger.error(f"Classification error: {e}")
+        classified = state["verified_articles"]
+
+    return {"classified_articles": classified}
+
+
+@traceable(name="Clustering")
+def clustering_node(state: AgentState):
+    try:
+        res = detector.detect_clusters(state["classified_articles"])
+
+        if isinstance(res, dict):
+            clusters = res.get("clusters", [])
+            all_articles = res.get("articles_with_coords", state["classified_articles"])
+        else:
+            clusters = res
+            all_articles = state["classified_articles"]
+
+    except Exception as e:
+        logger.error(f"Clustering error: {e}")
+        clusters = []
+        all_articles = state["classified_articles"]
+
+    clusters = sorted(clusters, key=len, reverse=True)
+    clusters = [c for c in clusters if len(c) >= 2][:4]
+
+    if not clusters:
+        fallback = state["classified_articles"][:5]
+        clusters = [fallback] if fallback else []
+
+    return {"clusters": clusters, "articles": all_articles}
+
+
+@traceable(name="Scraping")
+def scraping_node(state: AgentState):
+    all_scraped = []
+
+    for cluster in state["clusters"]:
+        urls = []
+        seen = set()
+
+        for article in cluster:
+            link = article.get("link")
+            if link and link not in seen:
+                urls.append(link)
+                seen.add(link)
+
+        urls = urls[:3]
+
+        if not urls:
+            continue
+
+        scraped = scraper.scrape_urls(urls)
+        all_scraped.append(scraped)
+
+    return {"scraped_data": all_scraped}
+
+
+@traceable(name="Synthesis")
+def synthesis_node(state: AgentState):
+    trends = []
+
+    for i, scraped in enumerate(state["scraped_data"]):
         try:
-            with open('feeds.json', 'r') as f:
-                return json.load(f)
+            briefing = synthesizer.synthesize_briefing(scraped)
         except Exception as e:
-            logger.error(f"Could not load feeds.json: {e}")
-            return []
+            briefing = f"Error generating briefing: {e}"
 
+        trends.append({
+            "trend_id": i + 1,
+            "briefing": briefing
+        })
+
+    return {"trends_output": trends}
+
+
+# -----------------------------
+# BUILD GRAPH
+# -----------------------------
+builder = StateGraph(AgentState)
+
+builder.add_node("rss", rss_node)
+builder.add_node("verify", verification_node)
+builder.add_node("classify", classification_node)
+builder.add_node("cluster", clustering_node)
+builder.add_node("scrape", scraping_node)
+builder.add_node("synthesize", synthesis_node)
+
+builder.set_entry_point("rss")
+
+builder.add_edge("rss", "verify")
+builder.add_edge("verify", "classify")
+builder.add_edge("classify", "cluster")
+builder.add_edge("cluster", "scrape")
+builder.add_edge("scrape", "synthesize")
+builder.add_edge("synthesize", END)
+
+graph = builder.compile()
+
+
+# -----------------------------
+# ORCHESTRATOR CLASS (🔥 FIX)
+# -----------------------------
+class Orchestrator:
+    def __init__(self):
+        self.graph = graph
 
     def run_pipeline(self):
-
-        logger.info("Starting pipeline run...")
-
-        feeds = self.load_feeds()
-
-        # ------------------------------
-        # 1️⃣ RSS POLLING
-        # ------------------------------
-        articles = self.poller.fetch_feeds(feeds, time_window_hours=24.0)
-
-        if not articles:
-            logger.info("No articles found.")
-            return
-
-        articles = articles[:90]
-
-        logger.info(f"Fetched {len(articles)} articles")
-
-
-        # ------------------------------
-        # 2️⃣ VERIFICATION
-        # ------------------------------
-        logger.info("Running verification agent...")
-
-        verified_articles = []
-
-        for article in articles:
-
-            try:
-                result = self.verifier.verify(article, articles)
-
-                # keep verified + uncertain
-                if result.get("verification_status") != "suspicious":
-                    verified_articles.append(result)
-
-            except Exception as e:
-                logger.warning(f"Verification failed: {e}")
-
-        logger.info(f"{len(verified_articles)} articles passed verification")
-
-        if not verified_articles:
-            logger.warning("No verified articles.")
-            return
-
-
-        # ------------------------------
-        # 3️⃣ CLASSIFICATION
-        # ------------------------------
-        logger.info("Running classification agent...")
-
         try:
-            classified_articles = self.classifier.classify(verified_articles)
+            with open("feeds.json") as f:
+                feeds = json.load(f)
 
-        except Exception as e:
-            logger.error(f"Classification failed: {e}")
-            classified_articles = verified_articles
-
-
-        # ------------------------------
-        # 4️⃣ TREND DETECTION
-        # ------------------------------
-        logger.info("Detecting trends...")
-
-        clusters_res = self.detector.detect_clusters(classified_articles)
-
-        clusters = clusters_res.get("clusters", [])
-        all_articles = clusters_res.get("articles_with_coords", classified_articles)
-
-        sorted_clusters = sorted(clusters, key=len, reverse=True)
-
-        valid_clusters = [c for c in sorted_clusters if len(c) >= 2]
-
-        trends_output = []
-
-        target_clusters = valid_clusters[:4]
-
-        if not target_clusters:
-            logger.info("No clusters found. Using fallback snapshot.")
-            target_clusters = [classified_articles[:5]]
-
-
-        # ------------------------------
-        # 5️⃣ SCRAPING + SYNTHESIS
-        # ------------------------------
-        for i, cluster in enumerate(target_clusters):
-
-            if len(cluster) >= 5:
-                trend_type = "Trending Narrative"
-            elif len(cluster) >= 2:
-                trend_type = "Emerging Topic"
-            else:
-                trend_type = "Latest News Snapshot"
-
-            urls = []
-            seen_links = set()
-
-            for article in cluster:
-
-                link = article.get("link")
-
-                if link and link not in seen_links:
-                    urls.append(link)
-                    seen_links.add(link)
-
-            urls = urls[:3]
-
-            scrape_results = self.scraper.scrape_urls(urls)
-
-            trend_num = i + 1
-
-            for article in cluster:
-                article["ui_trend_num"] = trend_num
-
-            logger.info(f"Synthesizing briefing for trend {trend_num}")
-
-            briefing_text = self.synthesizer.synthesize_briefing(scrape_results)
-
-            trends_output.append({
-                "trend_id": trend_num,
-                "briefing_type": trend_type,
-                "briefing": briefing_text,
-                "sources": cluster,
-                "trend_size": len(cluster)
+            result = self.graph.invoke({
+                "feeds": feeds,
+                "articles": [],
+                "verified_articles": [],
+                "classified_articles": [],
+                "clusters": [],
+                "scraped_data": [],
+                "trends_output": []
             })
 
+            trends = result.get("trends_output", [])
+            all_articles = result.get("articles", [])
 
-        # ------------------------------
-        # 6️⃣ SAVE OUTPUT
-        # ------------------------------
-        output = {
-            "timestamp": datetime.now().isoformat(),
-            "trends": trends_output,
-            "all_articles": all_articles[:150]
-        }
+            formatted_trends = []
 
-        with open(DATA_FILE, "w") as f:
-            json.dump(output, f, indent=2)
+            for t in trends:
+                formatted_trends.append({
+                    "trend_id": t.get("trend_id"),
+                    "briefing": t.get("briefing"),
+                    "trend_size": len(all_articles),
+                    "sources": all_articles[:5]
+                })
 
-        logger.info("Briefing generated and saved.")
+            output = {
+                "timestamp": datetime.utcnow().isoformat(),
+                "trends": formatted_trends,
+                "all_articles": all_articles
+            }
 
+            with open(DATA_FILE, "w") as f:
+                json.dump(output, f, indent=2)
 
-    def start_loop(self, interval_minutes=15):
+            logger.info("✅ Pipeline completed and data saved")
 
-        logger.info(f"Starting agent loop every {interval_minutes} minutes.")
-
-        while True:
-
-            try:
-                self.run_pipeline()
-
-            except Exception as e:
-                logger.error(f"Pipeline failed: {e}")
-
-            logger.info(f"Sleeping {interval_minutes} minutes")
-
-            time.sleep(interval_minutes * 60)
+        except Exception as e:
+            logger.error(f"❌ Pipeline failed: {e}")
+            raise
 
 
+# -----------------------------
+# DIRECT RUN (optional)
+# -----------------------------
 if __name__ == "__main__":
-
     orchestrator = Orchestrator()
-
     orchestrator.run_pipeline()

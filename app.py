@@ -5,9 +5,18 @@ import time
 from datetime import datetime
 import sys
 
+
 # Allow importing from src
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 from src.orchestrator import Orchestrator
+
+from src.semantic_search import SemanticSearch
+@st.cache_resource
+def get_search_engine():
+    return SemanticSearch()
+
+search_engine = get_search_engine()
+
 
 st.set_page_config(
     page_title="AI News Briefing",
@@ -25,10 +34,29 @@ def load_data():
             return json.load(f)
     except:
         return None
+data = load_data()
 
 st.title("AI News Briefing")
 
-data = load_data()
+# Semantic Search
+st.subheader(" Semantic Search")
+
+query = st.text_input("Search for topics (e.g., AI, war, startups)")
+
+if query and data:
+    with st.spinner(" Searching relevant news..."):
+        results = search_engine.search(query, data.get("all_articles", []))
+        time.sleep(0.3)
+
+    st.write(f"### Results for: '{query}'")
+
+    if not results:
+        st.info("No relevant articles found.")
+    else:
+        for art in results:
+            with st.container(border=True):
+                st.markdown(f"**[{art.get('title','Untitled')}]({art.get('link','#')})**")
+                st.caption(f"{art.get('source','Unknown')} • {art.get('published','')[:16]}")
 
 if not data:
     st.info("Waiting for the Agent to generate the first briefing...")
@@ -37,11 +65,9 @@ if not data:
     if st.button("Refresh"):
         st.rerun()
 else:
-    # Header
     last_update = datetime.fromisoformat(data['timestamp'])
     st.caption(f"Last updated: {last_update.strftime('%Y-%m-%d %H:%M:%S')}")
     
-    # Layout with sidebar-like structure or just columns
     main_col, side_col = st.columns([2, 1])
     
     with main_col:
@@ -52,15 +78,13 @@ else:
             st.info("No trends detected.")
         else:
             for trend in trends:
-                st.markdown(f"### Trend {trend['trend_id']}") #: {trend['briefing_type']}
+                st.markdown(f"### Trend {trend['trend_id']}") 
                 
-                # Main Briefing Card
                 with st.container(border=True):
                     st.markdown(trend['briefing'])
                     
                 st.markdown(f"**Synthesized from {trend.get('trend_size', '?')} sources**")
                 
-                # Sources for the briefing natively grouped
                 with st.expander(f"View Topics for Trend {trend['trend_id']}"):
                     for source in trend.get('sources', []):
                         verification = source.get("verification_detail", {})
@@ -106,9 +130,9 @@ else:
             for art in raw_feed:
                 trend_num = art.get('ui_trend_num', -1)
                 if trend_num == -1:
-                    continue # Filter out noise and minor clusters not in top 4
+                    continue 
                 
-                # Ensure it's rendered as 1-indexed string categories to match summary
+                
                 cluster_label = f"Trend {trend_num}"
                 plot_data.append({
                     "x": art.get('x', 0.0),
@@ -116,7 +140,6 @@ else:
                     "Cluster": cluster_label,
                 })
                 
-            # Streamlit scatter chart supports lists of dicts
             st.scatter_chart(plot_data, x="x", y="y", color="Cluster")
             
         st.subheader("Raw Feed (Latest)")
@@ -125,7 +148,7 @@ else:
         if not raw_feed:
             st.info("No raw articles data available.")
         
-        for art in raw_feed[:15]: # Show top 15 in sidebar to avoid overflow
+        for art in raw_feed[:15]: 
             with st.container(border=True):
                 st.markdown(f"**[{art.get('title', 'Untitled')}]({art.get('link', '#')})**")
                 st.caption(f"{art.get('source', 'Unknown')} • {art.get('published', '')[:16]}")
